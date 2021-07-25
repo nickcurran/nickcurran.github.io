@@ -3,6 +3,13 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Welcome
 ---
 
-# Nick Curan
+## Hi!
+
+This is a test.
+
+## Info
+
+More info  
