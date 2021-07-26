@@ -5,11 +5,3 @@
 layout: home
 title: Welcome
 ---
-
-## Hi!
-
-This is a test.
-
-## Info
-
-More info  
