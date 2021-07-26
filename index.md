@@ -1,7 +1,14 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
-title: Welcome
+title: Nick Curran
+layout: default
 ---
+
+# Home
+
+## Links
+
+* [Photos](https://photos.tcob.com)
+* [About](about.html)
+* [Instagram](https://instagram.com/nickcurran)
+* [Facebook](https://www.facebook.com/nickcurran)
+* [LinkedIn](https://www.linkedin.com/in/nickcurran/)

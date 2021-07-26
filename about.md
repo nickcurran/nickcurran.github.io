@@ -1,7 +1,9 @@
 ---
 title: About
-layout: page
+layout: default
 ---
+# About
+
 ## Nick Curran
 
 I&#8217;m an [Irish](http://www.flickr.com/photos/tcob/tags/dad/)&#8211;[Colombian](http://www.flickr.com/photos/tcob/tags/mom/) Minnesotan forever enjoying my extremely late twenties, born in Edina and raised in the suburbs of West Saint Paul and Mendota Heights. My early education was found in the [finest public schools](http://www.isd197.org/) of the area. After high school, I studied at the [University of Minnesota](http://www1.umn.edu/twincities/index.php), graduating from their [Carlson School of Management](http://www.csom.umn.edu/) with a [BSB in MIS](http://www.carlsonschool.umn.edu/undergraduate/academics/majors-minors/management-information-systems.html). Later I earned my [MS in Software Engineering](http://www.stthomas.edu/gradsoftware/programs/ms/) from the [University of St. Thomas](http://www.stthomas.edu/).
