@@ -3,6 +3,8 @@ title: Nick Curran
 layout: default
 ---
 
+# Nick Curran
+
 ## Links
 
 * [Photos](https://photos.tcob.com)
