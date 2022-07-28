@@ -1,6 +1,6 @@
 ---
 title: Nick Curran
-layout: page
+layout: default
 ---
 
 # Home
