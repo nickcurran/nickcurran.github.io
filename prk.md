@@ -9,7 +9,7 @@ I had [PRK surgery](http://en.wikipedia.org/wiki/Photorefractive_keratectomy) do
 
 ### Day 0 - September 22, 2006
 
-Three and a half hours until I go under the [laser](http://en.wikipedia.org/wiki/Photorefractive_keratectomy) - specifically "[Wavefront](http://www.lasikinstitute.org/Wavefront_Technology.html)" PRK. I'm excited, a bit nervous, and extraordinarily curious about what life will be like without glasses or contacts, provided all goes well. Today they're doing the right eye. Next Friday, they'll be doing the left.
+Three and a half hours until I go under the [laser](http://en.wikipedia.org/wiki/Photorefractive_keratectomy) - specifically "Wavefront" PRK. I'm excited, a bit nervous, and extraordinarily curious about what life will be like without glasses or contacts, provided all goes well. Today they're doing the right eye. Next Friday, they'll be doing the left.
 
 ### Day 1
 
@@ -65,7 +65,7 @@ Not much improvement today. I'm on the way to my left eye surgery as I type. Mor
 
 ### Day 8
 
-The left eye surgery went about the same as [the right](http://18.221.236.252/prk/prk_day_1.html), which is to say it went well. The pain and discomfort, while quite sharp for a moment yesterday afternoon, hasn't been as bad as the first time around, but I think that is at least partly due to the fact that I'm managing it better (thank you, Vicodin). And let's just say that the blackout cellular shades I put up in the spring are really paying off. It's 70 and sunny outside, but in here it's nearly pitch dark.
+The left eye surgery went about the same as the right, which is to say it went well. The pain and discomfort, while quite sharp for a moment yesterday afternoon, hasn't been as bad as the first time around, but I think that is at least partly due to the fact that I'm managing it better (thank you, Vicodin). And let's just say that the blackout cellular shades I put up in the spring are really paying off. It's 70 and sunny outside, but in here it's nearly pitch dark.
 
 The follow up this morning went well too, and the doc says everything looks fine. Vision in the left eye was at 20/25, slightly better even than the right eye. Lighting and tearing are a factor as well as fluctuations due to the healing process, so at this point it's certainly not as good as my right, which has been healing for a week.
 
