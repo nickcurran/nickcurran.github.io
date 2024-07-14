@@ -10,11 +10,12 @@
 }
 
 #banner {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Outfit", Helvetica, Arial, sans-serif;
   font-size: 15vw;
+  font-weight: 700;
+  font-optical-sizing: auto;
 
-  font-weight: 1000;
-  word-spacing: 100vw;
+  /* word-spacing: 100vw; */
   line-height: 85%;
 }
 
@@ -24,12 +25,3 @@
     color: white;
   }
 }
-
-/* 
-@media (prefers-color-scheme: light) {
-  html {
-    background-color: white;
-    color: black;
-  }
-} 
-*/
