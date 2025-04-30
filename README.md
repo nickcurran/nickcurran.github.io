@@ -1,3 +1,18 @@
+# Nick's Readme
+
+## Viewing
+
+This site is viewable at [tcob.com](https://tcob.com) and [nickcurran.github.io](nickcurran.github.io).
+
+## Publishing
+
+This site is currently hosted by GitHub Pages via [my repo](https://github.com/nickcurran/nickcurran.github.io). To publish changes, run:
+
+### `npm run deploy`
+
+
+# _Original Readme Follows_
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,4 +1,6 @@
-[
-    "Taking Care of Business"
-    // "Two Cans of Bud"
-]
+{
+    "_comment": "The titles array is used to populate the main banner. One will be picked at random.",
+    "titles": [
+        "Taking Care of Business"
+    ]
+}

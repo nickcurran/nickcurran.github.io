@@ -6,8 +6,8 @@ function getRandomInt(max: number) {
 }
   
 function Banner() {
-    const index = getRandomInt(Titles.length)
-    const title = Titles[index]
+    const index = getRandomInt(Titles.titles.length)
+    const title = Titles.titles[index]
 
     return (
         <div id="banner">
