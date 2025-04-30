@@ -1,5 +1,11 @@
 # Nick's Readme
 
+## To Do
+
+* Update create-react-app
+* Flip banner to about info using [card flip from this tutorial](https://www.w3schools.com/howto/howto_css_flip_card.asp)
+* Convert MD to linked readable pags
+
 ## Viewing
 
 This site is viewable at [tcob.com](https://tcob.com) and [nickcurran.github.io](nickcurran.github.io).
@@ -8,8 +14,9 @@ This site is viewable at [tcob.com](https://tcob.com) and [nickcurran.github.io]
 
 This site is currently hosted by GitHub Pages via [my repo](https://github.com/nickcurran/nickcurran.github.io). To publish changes, run:
 
-### `npm run deploy`
+### `npm run deploy -- -m "Some commit message for the gh-pages branch"`
 
+Check the status of a deployment [here](https://github.com/nickcurran/nickcurran.github.io/actions).
 
 # _Original Readme Follows_
 
