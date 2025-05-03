@@ -1,3 +1,5 @@
+'use client'
+
 import Titles from "@/data/Titles.json"
 import { Outfit } from "next/font/google";
 
