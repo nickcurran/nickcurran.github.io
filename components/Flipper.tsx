@@ -13,7 +13,7 @@ function getRandomInt(max: number) {
     return Math.floor(Math.random() * max);
 }
 
-export default function Banner() {
+export default function Flipper() {
 
     const [flipClass, setFlipClass] = useState("")
 

@@ -1,11 +1,11 @@
-import Banner from '@/components/Banner';
+import Flipper from '@/components/Flipper';
 
 export default function About() {
     return (
         <div>
             <h1>About Nick</h1>
 
-            <Banner />
+            <Flipper />
         </div>
     )
 }
