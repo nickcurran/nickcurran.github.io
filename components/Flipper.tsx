@@ -16,7 +16,7 @@ export default function Flipper(props: FlipperProps) {
     }
 
     return (
-        <div id="container" onClick={flip} className={`${centeringClass} perspective-distant`}>
+        <div id="container" onClick={flip} className={`${centeringClass} perspective-distant cursor-pointer`}>
 
             <div id="flipper" className={`${flipClass} transform-3d duration-[1s] transition-transform`}>
 

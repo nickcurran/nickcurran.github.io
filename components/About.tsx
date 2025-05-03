@@ -45,7 +45,7 @@ export default function About() {
         <div>
             <h1 className={`${outfit.className} text-[12vw] text-nowrap`}>Nick Curran</h1>
 
-            <div className="flex flex-row justify-between">
+            <div className="flex flex-row justify-between pl-1 pr-1">
                 {socials.map(social =>
                     <a key={social.name} onClick={linkClicked} href={social.url} target="_blank" rel="noopener noreferrer">
                         {social.icon}

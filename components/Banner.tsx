@@ -1,7 +1,8 @@
 'use client'
 
+import { useState } from "react"
 import Titles from "@/data/Titles.json"
-import { Outfit } from "next/font/google";
+import { Outfit } from "next/font/google"
 
 const outfit = Outfit({
     weight: ["700"],
@@ -13,13 +14,19 @@ function getRandomInt(max: number) {
 }
 
 export default function Banner() {
-    const index = getRandomInt(Titles.titles.length)
-    const title = Titles.titles[index]
-    const words = title.split(" ")
+    const [title, setTitle] = useState<string>(Titles.titles[0])
+
+    function onClick() {
+        const newIndex = getRandomInt(Titles.titles.length - 1)
+        const newTitle = Titles.titles.filter(t => t != title)[newIndex]
+
+        // Set after the animation ends, its duration is 1s
+        setTimeout(() => setTitle(newTitle), 1100)
+    }
 
     return (
-        <div className={`${outfit.className} text-[15vw] leading-[85%]`}>
-            {words.map((word, i) =>
+        <div onClick={onClick} className={`${outfit.className} text-[15vw] leading-[85%]`}>
+            {title.split(" ").map((word, i) =>
                 <div key={i++}>{word}</div>
             )}
         </div>
