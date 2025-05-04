@@ -52,7 +52,7 @@ export default function About() {
             <h1 className={`${outfit.className} text-[12vw] text-nowrap`}>Nick Curran</h1>
 
             <p className="max-w-[600px] m-auto pb-5">
-                Greetings! Thanks for visiting tcob.com. I'm Nick. I 
+                Greetings! Thanks for visiting tcob.com; I&apos;m Nick. I 
                 like <a onClick={linkClicked} href="https://photos.tcob.com" target="_blank">photography</a> and <a onClick={linkClicked} href="http://movies.tcob.com" target="_blank">movies</a>
                 , travel and pickleball.
             </p>
