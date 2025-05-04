@@ -7,20 +7,20 @@ export const metadata: Metadata = {
     description: "Taking Care of Business, the home page of Nick Curran"
 };
 
-export default function RootLayout({
-    children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
+interface LayoutProps {
+    children: React.ReactNode
+}
+
+export default function RootLayout(props: Readonly<LayoutProps>) {
     return (
         <html lang="en">
             <body>
                 <main>
-                    {children}
+                    {props.children}
                 </main>
 
                 <Footer />
             </body>
         </html>
-    );
+    )
 }
