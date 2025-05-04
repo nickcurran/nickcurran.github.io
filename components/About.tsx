@@ -1,12 +1,8 @@
 'use client'
 
-import { MouseEvent } from "react";
-import { Outfit } from "next/font/google";
-import BlueSky from "@/components/icons/BlueSky";
-import Instagram from "@/components/icons/Instagram";
-import Facebook from "@/components/icons/Facebook";
-import LinkedIn from "./icons/LinkedIn";
-import Letterboxd from "./icons/Letterboxd";
+import { MouseEvent } from "react"
+import { Outfit } from "next/font/google"
+import Icon from "@/components/Icon"
 
 const outfit = Outfit({
     weight: ["700"],
@@ -17,27 +13,27 @@ const socials = [
     {
         name: "BlueSky",
         url: "https://bsky.app/profile/nickcurran.bsky.social",
-        icon: <BlueSky />
+        icon: <Icon name="bluesky" alt="BlueSky" />
     },
     {
         name: "Letterboxd",
         url: "https://letterboxd.com/AlmostNico/",
-        icon: <Letterboxd />
+        icon: <Icon name="letterboxd" alt="Letterboxd" />
     },
     {
         name: "Instagram",
         url: "https://instagram.com/nickcurran",
-        icon: <Instagram />
+        icon: <Icon name="instagram" alt="Instagram" />
     },
     {
         name: "Facebook",
         url: "https://facebook.com/nickcurran",
-        icon: <Facebook />
+        icon: <Icon name="facebook" alt="Facebook" />
     },
     {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/nickcurran/",
-        icon: <LinkedIn />
+        icon: <Icon name="linkedin" alt="LinkedIn" />
     }
 ]
 
@@ -58,7 +54,7 @@ export default function About() {
             </p>
 
             <p className="max-w-[600px] m-auto pb-15">
-                My socials are below, but <a onClick={linkClicked} href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">my OnlyFans page</a> is still in progress.
+                My socials are below. The <a onClick={linkClicked} href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">OnlyFans page</a> is still in progress.
             </p>
 
             <div className="flex flex-row justify-between pl-1 pr-1">

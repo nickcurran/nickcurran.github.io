@@ -2,7 +2,7 @@
 
 import React, { useState, ReactNode } from 'react'
 
-interface FlipperProps {
+export interface FlipperProps {
     children: [ReactNode, ReactNode]
 }
 

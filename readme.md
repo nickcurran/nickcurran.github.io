@@ -1,6 +1,6 @@
 # tcob.com
 
-This is the source for tcob.com. It's a [nextjs](https://vercel.com/frameworks/nextjs) app generated with
+This is the source for tcob.com. It's a [Next.js](https://vercel.com/frameworks/nextjs) app generated with
 
 `npx create-next-app@latest` (latest was 15.3.1)
 
