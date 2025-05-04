@@ -3,6 +3,7 @@
 import { MouseEvent } from "react"
 import { Outfit } from "next/font/google"
 import Icon from "@/components/Icon"
+import Link from "next/link";
 
 const outfit = Outfit({
     weight: ["700"],
@@ -54,7 +55,7 @@ export default function About() {
             </p>
 
             <p className="max-w-[600px] m-auto pb-15">
-                My socials are below. The <a onClick={linkClicked} href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">OnlyFans page</a> is still in progress.
+                My socials are below. The <a onClick={linkClicked} href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">OnlyFans page</a> is still in progress. In the meantime, here are some other pages: <Link onClick={linkClicked} target="_blank" href="/about">about this site</Link>, the <Link onClick={linkClicked} target="_blank" href="/tray">tray story</Link>, and my <Link onClick={linkClicked} target="_blank" href="/prk">PRK experience</Link>.
             </p>
 
             <div className="flex flex-row justify-between pl-1 pr-1">
