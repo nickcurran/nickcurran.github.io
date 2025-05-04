@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
     title: "Nick Curran",
@@ -15,11 +14,18 @@ export default function RootLayout(props: Readonly<LayoutProps>) {
     return (
         <html lang="en">
             <body>
-                <main>
-                    {props.children}
-                </main>
-
-                <Footer />
+                <div className="flex flex-col min-h-screen">
+                    <main className="flex-1">
+                        {props.children}
+                    </main>
+                    
+                    <footer className="w-full p-8 text-center text-xs">
+                        <div className="flex justify-between text-gray-300 dark:text-gray-700">
+                            <div className="">© 2025 Nick Curran</div>
+                            <div>Icons by <a href="https://icons8.com" target="_blank" rel="noopener noreferrer">Icon8</a></div>
+                        </div>
+                    </footer>
+                </div>
             </body>
         </html>
     )

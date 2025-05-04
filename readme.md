@@ -16,6 +16,10 @@ and the following options:
 
 See the [original readme](_docs/readme_original.md) for further info from that generation.
 
+## Features
+
+I'm using Markdown and Dynamic Imports to populate most content as [documented here](https://nextjs.org/docs/app/guides/mdx).
+
 ## Deploy
 
 Pushes to main are deployed automatically via [GitHub Actions](https://github.com/nickcurran/nickcurran.github.io/actions)
