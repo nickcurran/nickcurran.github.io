@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Titles from "@/data/Titles.json"
 import { Outfit } from "next/font/google"
+import Link from "next/link";
 
 const outfit = Outfit({
     weight: ["700"],
@@ -25,10 +26,12 @@ export default function Banner() {
     }
 
     return (
-        <div onClick={onClick} className={`${outfit.className} text-[15vw] leading-[85%]`}>
-            {title.split(" ").map((word, i) =>
-                <div key={i++}>{word}</div>
-            )}
-        </div>
+        <h1 onClick={onClick} className={`${outfit.className} absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] leading-[85%]`}>
+            <Link href="/welcome">
+                {title.split(" ").map((word, i) =>
+                    <div key={i++}>{word}</div>
+                )}
+            </Link>
+        </h1>
     )
 }

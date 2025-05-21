@@ -45,8 +45,8 @@ export default function About() {
     }
 
     return (
-        <div>
-            <h1 className={`${outfit.className} text-[12vw] text-nowrap`}>Nick Curran</h1>
+        <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
+            <h1 className={`${outfit.className} text-[12vw] text-nowrap`}><Link href="/">Nick Curran</Link></h1>
 
             <p className="max-w-[600px] m-auto pb-5">
                 Greetings! Thanks for visiting tcob.com; I&apos;m Nick. I 
