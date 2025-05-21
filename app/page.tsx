@@ -1,7 +1,8 @@
-import Banner from "@/components/Banner";
+import Banner from '@/components/Banner'
+import { ReactElement } from 'react'
 
-export default function Home() {
-    return (
-        <Banner />
-    );
+export default function Home (): ReactElement {
+  return (
+    <Banner />
+  )
 }

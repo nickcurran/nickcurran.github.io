@@ -1,23 +1,23 @@
-import type { NextConfig } from "next";
-import createMDX from "@next/mdx";
+import type { NextConfig } from 'next'
+import createMDX from '@next/mdx'
 
 const nextConfig: NextConfig = {
-    // output: 'export' must be here for github pages
-    output: 'export',
+  // output: 'export' must be here for github pages
+  output: 'export',
 
-    // Configure `pageExtensions` to include markdown and MDX files
-    pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-    
-    // Optionally, add any other Next.js config below
-    turbopack: {
-        resolveExtensions: ['.js', '.jsx', '.ts', '.tsx', '.md', '.mdx'],
-    }
-};
+  // Configure `pageExtensions` to include markdown and MDX files
+  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+
+  // Optionally, add any other Next.js config below
+  turbopack: {
+    resolveExtensions: ['.js', '.jsx', '.ts', '.tsx', '.md', '.mdx']
+  }
+}
 
 const withMDX = createMDX({
-    extension: /\.(md|mdx)$/,
-    
-    // Add markdown plugins here, as desired
+  extension: /\.(md|mdx)$/
+
+  // Add markdown plugins here, as desired
 })
 
 // Merge MDX config with Next.js config
