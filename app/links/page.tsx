@@ -54,7 +54,7 @@ export default function About (): ReactElement {
       </p>
 
       <p className='max-w-[600px] m-auto pb-15'>
-        My socials are below. The <a onClick={linkClicked} href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank' rel='noreferrer'>OnlyFans page</a> is still in progress. In the meantime, here are some other pages: <Link onClick={linkClicked} target='_blank' href='/about'>about this site</Link>, the <Link onClick={linkClicked} target='_blank' href='/tray'>tray story</Link>, and my <Link onClick={linkClicked} target='_blank' href='/prk'>PRK experience</Link>.
+        My socials are below. The <a onClick={linkClicked} href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank' rel='noreferrer'>OnlyFans page</a> is still in progress. In the meantime, here are some other pages: <Link onClick={linkClicked} href='/about'>about this site</Link>, the <Link onClick={linkClicked} href='/tray'>tray story</Link>, and my <Link onClick={linkClicked} href='/prk'>PRK experience</Link>.
       </p>
 
       <div className='flex flex-row justify-between pl-1 pr-1'>

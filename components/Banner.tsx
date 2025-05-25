@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, ReactElement } from 'react'
-import Titles from '@/data/Titles.json'
+import { useState, useEffect, ReactElement } from 'react'
+import { titles } from '@/data/Titles.json'
 import { Outfit } from 'next/font/google'
 import Link from 'next/link'
 
@@ -14,20 +14,32 @@ function getRandomInt (max: number): number {
   return Math.floor(Math.random() * max)
 }
 
-export default function Banner (): ReactElement {
-  const [title, setTitle] = useState<string>(Titles.titles[0])
-
-  function onClick (): void {
-    const newIndex = getRandomInt(Titles.titles.length - 1)
-    const newTitle = Titles.titles.filter(t => t !== title)[newIndex]
-
-    // Set after the animation ends, its duration is 1s
-    setTimeout(() => setTitle(newTitle), 1100)
+function pickTitleIndex (): number {
+  if (localStorage.getItem('lastTitleIndex') === null) {
+    return 0
   }
 
+  return getRandomInt(titles.length - 1)
+}
+
+function pickTitle (): string {
+  const index = pickTitleIndex()
+  const title = titles[index]
+  localStorage.setItem('lastTitleIndex', index.toString())
+  return title
+}
+
+export default function Banner (): ReactElement {
+  const [title, setTitle] = useState('')
+
+  useEffect(() => {
+    const title = pickTitle()
+    setTitle(title)
+  }, [])
+
   return (
-    <h1 onClick={onClick} className={`${outfit.className} absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] leading-[85%]`}>
-      <Link href='/welcome'>
+    <h1 className={`${outfit.className} absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] leading-[85%]`}>
+      <Link href='/links'>
         {title.split(' ').map((word, i) =>
           <div key={i++}>{word}</div>
         )}
