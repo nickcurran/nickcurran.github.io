@@ -34,7 +34,7 @@ const socials = [
 export default function Menu (): ReactElement {
   return (
     <div id='menu' className='flex items-center m-5'>
-      <ul className='flex flex-1 space-x-4'>
+      <ul className='flex flex-1 space-x-2.5'>
         {items.map(item => (
           <li key={item.name}>
             <Link href={item.href}>
@@ -44,10 +44,10 @@ export default function Menu (): ReactElement {
         ))}
       </ul>
 
-      <ul className='flex space-x-4'>
+      <ul className='flex space-x-2.5'>
         {socials.map(social => (
           <li key={social.name}>
-            <Link href={social.url} target='_blank' rel='noopener noreferrer' className='text-blue-500 hover:underline'>
+            <Link href={social.url} target='_blank' rel='noopener noreferrer' className='social'>
               <Icon name={social.name.toLowerCase()} alt={social.name} />
             </Link>
           </li>
