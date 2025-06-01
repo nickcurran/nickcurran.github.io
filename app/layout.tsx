@@ -17,12 +17,12 @@ export default function RootLayout (props: Readonly<LayoutProps>): ReactElement 
   return (
     <html lang='en'>
       <body>
-        <div className='flex flex-col min-h-screen'>
-          <main className='flex-1'>
+        <div className='flex items-center justify-center flex-col min-h-screen'>
+          <main className='flex items-center justify-center flex-col flex-1'>
             {props.children}
           </main>
 
-          <footer className='w-full p-8 text-center text-xs'>
+          <footer className='w-full p-5 text-center text-xs'>
             <div className='flex justify-between text-gray-300 dark:text-gray-700'>
               <div className=''>© 2025 <Link href='/'>Nick Curran</Link></div>
               <div>Icons by <a href='https://icons8.com' target='_blank' rel='noopener noreferrer'>Icon8</a></div>

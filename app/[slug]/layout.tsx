@@ -1,3 +1,4 @@
+import Menu from '@/components/Menu'
 import { ReactElement } from 'react'
 
 interface StoryProps {
@@ -6,6 +7,11 @@ interface StoryProps {
 
 export default function StoryLayout (props: Readonly<StoryProps>): ReactElement {
   return (
-    <div id='story'>{props.children}</div>
+    <div>
+      <Menu />
+      <div id='story'>
+        {props.children}
+      </div>
+    </div>
   )
 }

@@ -4,6 +4,7 @@
     --background: #ffffff;
     --foreground: #171717;
     --font-heading: 'Outfit', sans-serif;
+    --color-link: #74b9ff;
 }
 
 @theme inline {
@@ -31,6 +32,18 @@ h1 {
     font-weight: 700;
 }
 
+h1#banner {
+    font-size: 15vw;
+    line-height: 85%;
+}
+
+@media only screen and (min-width: 800px) {
+    h1#banner {
+        font-size: 117px;
+    }
+    
+}
+
 h2 {
     font-family: var(--font-heading);
     font-weight: 600;
@@ -38,22 +51,45 @@ h2 {
 
 /* This is Electron Blue from the American Palette here: https://flatuicolors.com/palette/us */
 a {
-    color: #74b9ff;
+    color: var(--color-link);
 }
 
 h1 a {
     color: var(--foreground);
 }
 
+div#menu {
+    a {
+        color: var(--foreground);
+        font-family: var(--font-heading);
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: var(--color-link);
+        text-decoration: none;
+    }
+}
+
 div#story {
 
-    margin: 0 auto;
-    padding: 2.5rem;
+    margin: 2rem auto;
+    padding-right: 20px;
+    padding-left: 20px;
     max-width: 800px;
+    position: relative;
 
-    h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
+    div#header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        font-family: var(--font-heading);
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
     }
 
     h2 {
@@ -62,8 +98,13 @@ div#story {
     }
 
     p {
-        padding-bottom: 1rem;
+        margin-bottom: 1rem;
         font-size: 1.125rem;
         line-height: 1.75rem;
+    }
+
+    img {
+        border-radius: 20px;
+        margin: 10px 0;
     }
 }

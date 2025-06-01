@@ -12,7 +12,7 @@ export default async function Page ({
 }
 
 export function generateStaticParams (): Array<{ slug: string }> {
-  return ['about', 'prk', 'tray'].map((slug) => ({
+  return ['about', 'prk', 'tray'].map(slug => ({
     slug
   }))
 }
