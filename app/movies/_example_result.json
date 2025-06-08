@@ -1,0 +1,2000 @@
+[{
+    "tmsId": "MV022959360000",
+    "rootId": "28456520",
+    "subType": "Feature Film",
+    "title": "Thunderbolts*",
+    "releaseYear": 2025,
+    "releaseDate": "2025-04-30",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Action", "Adventure"],
+    "longDescription": "Ensnared in a death trap, an unconventional team of antiheroes -- Yelena Belova, Bucky Barnes, Red Guardian, Ghost, Taskmaster and John Walker -- embarks on a dangerous mission that forces them to confront the darkest corners of their pasts.",
+    "shortDescription": "A team of antiheroes embarks on a dangerous mission that forces them to confront their dark pasts.",
+    "topCast": ["Florence Pugh", "Sebastian Stan", "David Harbour"],
+    "directors": ["Jake Schreier"],
+    "officialUrl": "https://movies.disney.com/thunderbolts",
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "3"
+    },
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "PG-13"
+    }],
+    "advisories": ["Adult Language", "Adult Situations", "Violence"],
+    "runTime": "PT02H06M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p28456520_v_v8_ab.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T11:00",
+        "quals": "A.M.",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=264985&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T12:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=264985&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T19:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=264985&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T12:45",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=264985&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T16:10",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=264985&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV015329470000",
+    "rootId": "18959126",
+    "subType": "Feature Film",
+    "title": "Mission: Impossible -- The Final Reckoning",
+    "releaseYear": 2025,
+    "releaseDate": "2025-05-14",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Action", "Adventure", "Thriller"],
+    "longDescription": "Ethan Hunt and the IMF team race against time to find the Entity, a rogue artificial intelligence that can destroy mankind.",
+    "shortDescription": "Ethan Hunt and the team race against time to find the Entity, a rogue AI that can destroy mankind.",
+    "topCast": ["Tom Cruise", "Hayley Atwell", "Ving Rhames"],
+    "directors": ["Christopher McQuarrie"],
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "3"
+    },
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "PG-13"
+    }],
+    "advisories": ["Adult Language", "Adult Situations", "Violence"],
+    "runTime": "PT02H49M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p18959126_v_v11_ag.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T11:10",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=207691&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T14:35",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=207691&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T18:35",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=207691&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T21:50",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=207691&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T13:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=207691&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T20:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=207691&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T10:40",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=207691&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T14:25",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=207691&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T18:30",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=207691&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T21:10",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=207691&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV025226690000",
+    "rootId": "29464575",
+    "subType": "Feature Film",
+    "title": "The Phoenician Scheme",
+    "releaseYear": 2025,
+    "releaseDate": "2025-05-28",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Comedy"],
+    "longDescription": "Wealthy businessman Zsa-zsa Korda appoints his only daughter, a nun, as sole heir to his estate. As Korda embarks on a new enterprise, they soon become the target of scheming tycoons, foreign terrorists and determined assassins.",
+    "shortDescription": "A businessman and his daughter become the target of scheming tycoons, terrorists and assassins.",
+    "topCast": ["Benicio del Toro", "Mia Threapleton", "Michael Cera"],
+    "directors": ["Wes Anderson"],
+    "officialUrl": "https://focusfeatures.com/the-phoenician-scheme",
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "PG-13"
+    }],
+    "advisories": ["Adult Situations", "Nudity", "Violence"],
+    "runTime": "PT01H41M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p29464575_v_v12_ab.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T11:15",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T11:50",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T12:35",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T14:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T14:25",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T14:45",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T15:30",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T16:45",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T17:10",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T17:30",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T18:15",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T19:35",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T20:15",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T22:25",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T23:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T10:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T12:00",
+        "quals": "Reserved Seating|Recliners|Descriptive Video Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T13:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T14:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T16:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T17:00",
+        "quals": "Open Captioned|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T19:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T21:30",
+        "quals": "Reserved Seating|Recliners|Descriptive Video Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T10:15",
+        "quals": "Advance Tickets Available|Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T11:00",
+        "quals": "Advance Tickets Available|Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T13:30",
+        "quals": "Advance Tickets Available|Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T16:20",
+        "quals": "Advance Tickets Available|Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T19:10",
+        "quals": "Advance Tickets Available|Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=276186&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T21:50",
+        "quals": "Advance Tickets Available|Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=276186&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV023212990000",
+    "rootId": "28572684",
+    "subType": "Feature Film",
+    "title": "Lilo & Stitch",
+    "releaseYear": 2025,
+    "releaseDate": "2025-05-21",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Family", "Comedy", "Science fiction"],
+    "longDescription": "A fugitive alien helps a lonely Hawaiian girl mend her broken family.",
+    "shortDescription": "A fugitive alien helps a lonely Hawaiian girl mend her broken family.",
+    "topCast": ["Maia Kealoha", "Sydney Elizebeth Agudong", "Chris Sanders"],
+    "directors": ["Dean Fleischer Camp"],
+    "officialUrl": "https://movies.disney.com/lilo-and-stitch-2025",
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "2.5"
+    },
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "PG"
+    }],
+    "advisories": ["Adult Situations"],
+    "runTime": "PT01H48M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p28572684_v_v12_ac.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T11:35",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T15:05",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T18:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T21:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T11:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T12:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T13:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T14:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T14:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T15:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T16:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T17:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T19:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T22:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T10:30",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T11:45",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T13:15",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T13:50",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T16:00",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T17:00",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T18:45",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T19:30",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=272023&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T21:30",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=272023&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV020194390000",
+    "rootId": "24715568",
+    "subType": "Feature Film",
+    "title": "Ballerina",
+    "releaseYear": 2025,
+    "releaseDate": "2025-06-04",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Action", "Thriller"],
+    "longDescription": "Trained in the assassin traditions of the Ruska Roma, Eve Macarro takes on an army of killers as she seeks revenge against those responsible for the death of her father.",
+    "shortDescription": "An assassin takes on an army of killers as she seeks revenge for her father's death.",
+    "topCast": ["Ana de Armas", "Keanu Reeves", "Ian McShane"],
+    "directors": ["Len Wiseman"],
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "R"
+    }],
+    "advisories": ["Adult Language", "Adult Situations", "Graphic Violence"],
+    "runTime": "PT02H05M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p24715568_v_v12_ab.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T11:40",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=247345&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T15:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=247345&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T18:20",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=247345&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T21:35",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=247345&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T10:00",
+        "quals": "Advance Tickets Available|No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=247345&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T11:30",
+        "quals": "Advance Tickets Available|No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=247345&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T12:30",
+        "quals": "Advance Tickets Available|No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=247345&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T14:45",
+        "quals": "Advance Tickets Available|No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=247345&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T15:45",
+        "quals": "Advance Tickets Available|No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=247345&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T18:00",
+        "quals": "Advance Tickets Available|No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=247345&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T19:00",
+        "quals": "Advance Tickets Available|No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=247345&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T21:20",
+        "quals": "Advance Tickets Available|No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=247345&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T22:10",
+        "quals": "Advance Tickets Available|No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=247345&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV025226240000",
+    "rootId": "29463545",
+    "subType": "Feature Film",
+    "title": "Friendship",
+    "releaseYear": 2024,
+    "releaseDate": "2024-09-08",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Comedy drama", "Thriller"],
+    "longDescription": "Suburban dad Craig falls hard for his charismatic new neighbor, but his attempts to make an adult male friend soon threatens to ruin both of their lives.",
+    "shortDescription": "A man's attempt to befriend his charismatic new neighbor threatens to ruin both of their lives.",
+    "topCast": ["Tim Robinson", "Paul Rudd", "Kate Mara"],
+    "directors": ["Andrew DeYoung"],
+    "officialUrl": "https://a24films.com/films/friendship",
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "3"
+    },
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "R"
+    }],
+    "advisories": ["Adult Language", "Adult Situations"],
+    "runTime": "PT01H40M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p29463545_v_v12_ae.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T12:50",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276149&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T15:50",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276149&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T18:50",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276149&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T22:35",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276149&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T14:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276149&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T17:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276149&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T19:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276149&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T22:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276149&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV025283560000",
+    "rootId": "29531877",
+    "subType": "Feature Film",
+    "title": "Bring Her Back",
+    "releaseYear": 2025,
+    "releaseDate": "2025-05-30",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Horror", "Thriller"],
+    "longDescription": "A brother and sister witness a terrifying ritual at the secluded home of their new foster mother.",
+    "shortDescription": "A brother and sister witness a terrifying ritual at the secluded home of their new foster mother.",
+    "topCast": ["Sally Hawkins", "Billy Barratt", "Sora Wong"],
+    "directors": ["Danny Philippou", "Michael Philippou"],
+    "officialUrl": "https://a24films.com/films/bring-her-back",
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "3"
+    },
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "R"
+    }],
+    "advisories": ["Adult Language", "Adult Situations", "Graphic Violence", "Nudity"],
+    "runTime": "PT01H44M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p29531877_v_v12_ad.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T13:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T16:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T19:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T22:50",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T11:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T14:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T16:45",
+        "quals": "Reserved Seating|Recliners|Descriptive Video Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T19:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T21:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T10:10",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T14:30",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T17:15",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T19:50",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=276752&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T22:30",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=276752&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV025175110000",
+    "rootId": "29403293",
+    "subType": "Feature Film",
+    "title": "The Life of Chuck",
+    "releaseYear": 2024,
+    "releaseDate": "2024-09-06",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Drama", "Science fiction"],
+    "longDescription": "Charles \"Chuck\" Krantz experiences the wonder of love, the heartbreak of loss, and the multitudes contained in all of us.",
+    "shortDescription": "Charles \"Chuck\" Krantz experiences love, loss, and the multitudes contained in all of us.",
+    "topCast": ["Tom Hiddleston", "Chiwetel Ejiofor", "Karen Gillan"],
+    "directors": ["Mike Flanagan"],
+    "officialUrl": "https://www.neonrated.com/film/the-life-of-chuck",
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "R"
+    }],
+    "advisories": ["Adult Language", "Adult Situations"],
+    "runTime": "PT01H50M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p29403293_v_v8_aa.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T13:10",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=281070&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T16:10",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=281070&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T19:10",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=281070&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T22:10",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=281070&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV025334190000",
+    "rootId": "29582973",
+    "subType": "Feature Film",
+    "title": "Dangerous Animals",
+    "releaseYear": 2025,
+    "releaseDate": "2025-06-06",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Horror", "Thriller"],
+    "longDescription": "A shark-obsessed serial killer holds Zephyr, a rebellious surfer, captive on his boat. Racing against time, she must figure out a way to escape before he carries out a ritualistic feeding to the sharks below.",
+    "shortDescription": "A captive surfer must escape the clutches of a serial killer before he feeds her to the sharks.",
+    "topCast": ["Jai Courtney", "Hassie Harrison", "Josh Heuston"],
+    "directors": ["Sean Byrne"],
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "R"
+    }],
+    "advisories": ["Adult Language", "Adult Situations", "Graphic Violence"],
+    "runTime": "PT01H38M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p29582973_v_v12_ac.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T20:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=277326&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T22:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=277326&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T18:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=277326&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T21:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=277326&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T22:20",
+        "quals": "Advance Tickets Available",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=277326&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV022897040000",
+    "rootId": "28380869",
+    "subType": "Feature Film",
+    "title": "Sinners",
+    "releaseYear": 2025,
+    "releaseDate": "2025-03-07",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Horror", "Thriller"],
+    "longDescription": "Trying to leave their troubled lives behind, twin brothers return to their Mississippi hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+    "shortDescription": "Twin brothers return to their hometown only to discover a great evil is waiting to welcome them.",
+    "topCast": ["Michael B. Jordan", "Hailee Steinfeld", "Miles Caton"],
+    "directors": ["Ryan Coogler"],
+    "officialUrl": "https://www.warnerbros.com/movies/sinners",
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "3.5"
+    },
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "R"
+    }],
+    "advisories": ["Adult Language", "Adult Situations", "Graphic Violence"],
+    "runTime": "PT02H17M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p28380869_v_v12_ak.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5084",
+            "name": "Alamo Drafthouse South Lamar"
+        },
+        "dateTime": "2025-06-07T21:15",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AATHS&m=263318&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T11:40",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=263318&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T15:00",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=263318&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV020929570000",
+    "rootId": "18959126",
+    "subType": "Feature Film",
+    "title": "Mission: Impossible -- The Final Reckoning: The IMAX 2D Experience",
+    "releaseYear": 2025,
+    "releaseDate": "2025-05-23",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Action", "Adventure", "Thriller"],
+    "longDescription": "Ethan Hunt and the IMF team race against time to find the Entity, a rogue artificial intelligence that can destroy mankind.",
+    "shortDescription": "Ethan Hunt and the team race against time to find the Entity, a rogue AI that can destroy mankind.",
+    "topCast": ["Tom Cruise", "Hayley Atwell", "Ving Rhames"],
+    "directors": ["Christopher McQuarrie"],
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "3"
+    },
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "PG-13"
+    }],
+    "advisories": ["Adult Language", "Adult Situations", "Violence"],
+    "runTime": "PT02H49M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p18959126_v_v11_ag.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T10:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=240559&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T14:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=240559&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T18:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=240559&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T21:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=240559&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV025829170000",
+    "rootId": "30084208",
+    "subType": "Feature Film",
+    "title": "Dan Da Dan: Evil Eye",
+    "releaseYear": 2025,
+    "releaseDate": "2025",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Anime", "Action", "Adventure"],
+    "longDescription": "Momo and Okarun travel to a hot springs town, staying at a house rented by Momo's old friend Jiji. They aim to solve a mystery about Jiji's family.",
+    "shortDescription": "Momo and Okarun visit a hot springs town to solve a mystery about Jiji's family at the rented house.",
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "R"
+    }],
+    "advisories": ["Adult Situations", "Violence"],
+    "runTime": "PT01H33M",
+    "animation": "Anime",
+    "preferredImage": {
+        "uri": "tvbanners/generic/generic_tvbanners_v5.png"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T10:45",
+        "quals": "Japanese w/e.s.t.|Recliners|Reserved Seating|A.M.",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=285259&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T17:00",
+        "quals": "English Dubbed|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=285259&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV024513210000",
+    "rootId": "29052045",
+    "sportsId": "145",
+    "subType": "Feature Film",
+    "title": "Karate Kid: Legends",
+    "releaseYear": 2025,
+    "releaseDate": "2025-05-30",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Action", "Martial arts", "Drama"],
+    "longDescription": "After moving to New York City with his mother, kung fu prodigy Li Fong struggles to let go of the past as he tries to fit in with his new classmates. When a new friend needs his help, Li enters a karate competition -- but his skills alone aren't enough. With help from Mr. Han and Daniel LaRusso, he soon learns to merge two styles into one for the ultimate martial arts showdown.",
+    "shortDescription": "A kung fu prodigy merges two styles into one for the ultimate martial arts showdown.",
+    "topCast": ["Jackie Chan", "Ralph Macchio", "Ben Wang"],
+    "directors": ["Jonathan Entwistle"],
+    "officialUrl": "https://www.sonypictures.com/movies/karatekidlegends",
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "2.5"
+    },
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "PG-13"
+    }],
+    "advisories": ["Adult Language", "Adult Situations", "Violence"],
+    "runTime": "PT01H34M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p29052045_v_v12_ac.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T11:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=271474&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T13:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=271474&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T16:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=271474&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T18:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=271474&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T21:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=271474&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T10:05",
+        "quals": "No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=271474&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T13:00",
+        "quals": "No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=271474&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T15:30",
+        "quals": "No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=271474&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T18:15",
+        "quals": "No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=271474&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T22:00",
+        "quals": "No Passes|Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=271474&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV023214200000",
+    "rootId": "28574464",
+    "subType": "Feature Film",
+    "title": "I Don't Understand You",
+    "releaseYear": 2025,
+    "releaseDate": "2025",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Comedy"],
+    "longDescription": "Dom and Cole set out on the perfect Italian getaway. But after getting lost on the way to dinner, they end up stranded in a storm, offend the locals, and-whoops-accidentally kill a beloved restaurant owner. With no cell service or language skills, the body count continues to rise as their romantic escape goes completely off the rails.",
+    "shortDescription": "Dom and Cole set out on the perfect Italian getaway. They accidentally kill a restaurant owner.",
+    "topCast": ["Andrew Rannells", "Nick Kroll", "Amanda Seyfried"],
+    "directors": ["David Joseph Craig", "Brian Crano"],
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "R"
+    }],
+    "advisories": ["Adult Language", "Adult Situations", "Graphic Violence"],
+    "runTime": "PT01H36M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p28574464_v_v12_ab.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T11:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276028&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T13:45",
+        "quals": "Open Captioned|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276028&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T16:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276028&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T19:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276028&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T22:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=276028&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV023030740000",
+    "rootId": "28556332",
+    "subType": "Feature Film",
+    "title": "Final Destination Bloodlines",
+    "releaseYear": 2025,
+    "releaseDate": "2025-05-14",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Horror"],
+    "longDescription": "Plagued by a violent and recurring nightmare, a college student heads home to track down the one person who might be able to break the cycle of death and save her family from the grisly demise that inevitably awaits them all.",
+    "shortDescription": "A young woman heads home to track down the one person who might be able to break the cycle of death.",
+    "topCast": ["Kaitlyn Santa Juana", "Teo Briones", "Rya Kihlstedt"],
+    "directors": ["Adam Stein", "Zach Lipovsky"],
+    "officialUrl": "https://www.finaldestinationmovie.com/",
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "3"
+    },
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "R"
+    }],
+    "advisories": ["Adult Language", "Adult Situations", "Graphic Violence"],
+    "runTime": "PT01H50M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p28556332_v_v12_ad.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T11:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=270332&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T14:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=270332&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T17:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=270332&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T20:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=270332&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T22:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=270332&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T11:15",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=270332&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T14:00",
+        "quals": "Descriptive Video Services|Closed Captioned",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=270332&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T16:45",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": true,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=270332&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T19:40",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=270332&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T22:25",
+        "quals": "Closed Captioned|Descriptive Video Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=270332&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV022724030000",
+    "rootId": "28215037",
+    "subType": "Feature Film",
+    "title": "A Minecraft Movie",
+    "releaseYear": 2025,
+    "releaseDate": "2025-04-02",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Family", "Fantasy", "Adventure", "Comedy"],
+    "longDescription": "A mysterious portal pulls four misfits into the Overworld, a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master the terrain while embarking on a magical quest with an unexpected crafter named Steve.",
+    "shortDescription": "A portal pulls four misfits into the Overworld, a bizarre wonderland that thrives on imagination.",
+    "topCast": ["Jason Momoa", "Jack Black", "Sebastian Hansen"],
+    "directors": ["Jared Hess"],
+    "officialUrl": "https://www.warnerbros.com/movies/minecraft-movie",
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "2.5"
+    },
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "PG"
+    }],
+    "advisories": ["Adult Language", "Adult Situations", "Violence"],
+    "runTime": "PT01H41M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p28215037_v_v12_ap.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "5320",
+            "name": "AMC Barton Creek Square 14"
+        },
+        "dateTime": "2025-06-07T12:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=261718&d=2025-06-07"
+    }]
+}, {
+    "tmsId": "MV025925870000",
+    "rootId": "30176444",
+    "subType": "Feature Film",
+    "title": "Pavements",
+    "releaseYear": 2024,
+    "releaseDate": "2024",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Documentary", "Biography"],
+    "longDescription": "Documentary about the American indie band Pavement, which combines scripts with documentary images of the band and a musical mise-en-scene composed of songs from their discography.",
+    "shortDescription": "A musical mise-en-scene composed of songs from their discography.",
+    "topCast": ["Stephen Malkmus", "Scott Kanberg", "Joe Keery"],
+    "directors": ["Alex Ross Perry"],
+    "runTime": "PT02H08M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p30176444_v_v11_aa.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "11546",
+            "name": "AFS Cinema"
+        },
+        "dateTime": "2025-06-07T14:00",
+        "barg": false
+    }, {
+        "theatre": {
+            "id": "11546",
+            "name": "AFS Cinema"
+        },
+        "dateTime": "2025-06-07T20:30",
+        "barg": false
+    }]
+}, {
+    "tmsId": "MV000186470000",
+    "rootId": "8673",
+    "subType": "Feature Film",
+    "title": "Bay of Angels",
+    "releaseYear": 1963,
+    "releaseDate": "1963-01-01",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Drama"],
+    "longDescription": "This luminous, hypnotic tale of love at the roulette wheel has not been seen theatrically in the U.S. since its original 1964 release. In this lighthearted precursor to \"Croupier,\" Jeanne Moreau stars as Jackie, a compulsive gambler who falls in love with a bank clerk (Claude Mann) on holiday in Nice. At first, the two lovers simply use each other as good luck charms; but what happens to love when luck runs out? Painstakingly and lovingly restored by Agn\u00e8s Varda.",
+    "shortDescription": "Frenchwoman (Jeanne Moreau) gambles in Nice, meets man (Claude Mann) on lucky streak.",
+    "topCast": ["Jeanne Moreau", "Claude Mann", "Paul Guers"],
+    "directors": ["Jacques Demy"],
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "2"
+    },
+    "runTime": "PT01H25M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p8673_v_v8_ac.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "11546",
+            "name": "AFS Cinema"
+        },
+        "dateTime": "2025-06-07T16:30",
+        "barg": false
+    }]
+}, {
+    "tmsId": "MV000193470000",
+    "rootId": "8940",
+    "subType": "Feature Film",
+    "title": "Ran",
+    "releaseYear": 1985,
+    "releaseDate": "1985-06-01",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Historical drama"],
+    "longDescription": "At the age of seventy, after years of consolidating his empire, the Great Lord Hidetora Ichimonji (Tatsuya Nakadai) decides to abdicate and divide his domain amongst his three sons. Taro (Akira Terao), the eldest, will rule. Jiro (Jinpachi Nezu), his second son, and Saburo (Daisuke Ryu) will take command of the Second and Third Castles but are expected to obey and support their elder brother. Saburo defies the pledge of obedience and is banished.",
+    "shortDescription": "Lord Hidetora (Tatsuya Nakadai) and his sons wreak epic feudal chaos.",
+    "topCast": ["Tatsuya Nakadai", "Mieko Harada", "Akira Terao"],
+    "directors": ["Akira Kurosawa"],
+    "officialUrl": "http://www.rialtopictures.com/ran.html",
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "4"
+    },
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "R"
+    }],
+    "advisories": ["Adult Situations", "Graphic Violence"],
+    "runTime": "PT02H40M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p8940_v_v8_aa.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "11546",
+            "name": "AFS Cinema"
+        },
+        "dateTime": "2025-06-07T17:00",
+        "barg": false
+    }]
+}, {
+    "tmsId": "MV000178360000",
+    "rootId": "8364",
+    "subType": "Feature Film",
+    "title": "Streets of Fire",
+    "releaseYear": 1984,
+    "releaseDate": "1984-06-01",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Fantasy", "Adventure", "Action"],
+    "longDescription": "Raven Shaddock (Willem Dafoe), along with his gang of merciless biker friends, kidnaps rock singer Ellen Aim (Diane Lane). Ellen's former lover, soldier-for-hire Tom Cody (Michael Par\u00e9), happens to be passing through town on a visit. In an attempt to save his star act, Ellen's manager, Billy Fish (Rick Moranis), hires Tom to rescue Ellen. Billy and Tom, along with former soldier McCoy (Amy Madigan), battle through dangerous cityscapes, determined to get Ellen back.",
+    "shortDescription": "A hero (Michael Par\u00e9) rescues a rock star (Diane Lane) from a gang in a strange city.",
+    "topCast": ["Michael Par\u00e9", "Diane Lane", "Rick Moranis"],
+    "directors": ["Walter Hill"],
+    "qualityRating": {
+        "ratingsBody": "TMS",
+        "value": "2.5"
+    },
+    "ratings": [{
+        "body": "Motion Picture Association",
+        "code": "PG"
+    }],
+    "advisories": ["Adult Language", "Adult Situations", "Violence"],
+    "runTime": "PT01H38M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p8364_v_v8_af.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "11546",
+            "name": "AFS Cinema"
+        },
+        "dateTime": "2025-06-07T19:00",
+        "barg": false
+    }]
+}, {
+    "tmsId": "MV023002460000",
+    "rootId": "28515985",
+    "subType": "Feature Film",
+    "title": "The Ritual",
+    "releaseYear": 2025,
+    "releaseDate": "2025-06-06",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Horror"],
+    "longDescription": "Two priests must put aside their differences to perform a series of dangerous exorcisms on a possessed young woman.",
+    "shortDescription": "Two priests perform a series of dangerous exorcisms on a possessed young woman.",
+    "topCast": ["Al Pacino", "Dan Stevens", "Ashley Greene"],
+    "directors": ["David Midell"],
+    "advisories": ["Adult Situations"],
+    "runTime": "PT01H38M",
+    "preferredImage": {
+        "width": "240",
+        "height": "360",
+        "uri": "assets/p28515985_v_v11_ab.jpg?w=240&h=360",
+        "category": "VOD Art",
+        "text": "yes",
+        "primary": "true"
+    },
+    "showtimes": [{
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T19:20",
+        "quals": "Advance Tickets Available|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=270368&d=2025-06-07"
+    }, {
+        "theatre": {
+            "id": "8298",
+            "name": "Regal Westgate Stadium 11"
+        },
+        "dateTime": "2025-06-07T22:15",
+        "quals": "Advance Tickets Available|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANOT&m=270368&d=2025-06-07"
+    }]
+}]

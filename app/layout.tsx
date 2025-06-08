@@ -18,7 +18,7 @@ export default function RootLayout (props: Readonly<LayoutProps>): ReactElement 
     <html lang='en'>
       <body>
         <div className='flex items-center justify-center flex-col min-h-screen'>
-          <main className='flex items-center justify-center flex-col flex-1'>
+          <main className='flex w-full items-center justify-center flex-col flex-1'>
             {props.children}
           </main>
 

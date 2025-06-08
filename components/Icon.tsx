@@ -13,7 +13,7 @@ export default function Icon (props: IconProps): ReactElement {
   return (
     <picture>
       <source srcSet={darkSrc} media='(prefers-color-scheme: dark)' />
-      <Image src={lightSrc} alt={props.alt} width={24} height={24}/>
+      <Image src={lightSrc} alt={props.alt} width={24} height={24} />
     </picture>
   )
 }

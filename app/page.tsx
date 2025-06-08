@@ -2,11 +2,11 @@ import { ReactElement } from 'react'
 import Link from 'next/link'
 
 import { Outfit } from 'next/font/google'
- 
+
 const outfit = Outfit({
-  subsets: ['latin'],
+  subsets: ['latin']
 })
-export default function Home(): ReactElement {
+export default function Home (): ReactElement {
   const title = 'Taking Care of Business'
 
   return (
