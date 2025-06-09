@@ -5,6 +5,12 @@ import { usePathname } from 'next/navigation'
 import { ReactElement } from 'react'
 import Icon from './Icon'
 
+import { Outfit } from 'next/font/google'
+
+const outfit = Outfit({
+  subsets: ['latin']
+})
+
 const items = [
   { name: 'TCOB', href: '/' },
   { name: 'About', href: '/about' },
@@ -40,7 +46,7 @@ export default function Menu (): ReactElement {
   const pathname = usePathname()
 
   return (
-    <div id='menu' className='flex items-center m-5'>
+    <div id='menu' className={`flex items-center m-5 ${outfit.className}`}>
       <ul className='flex flex-1 space-x-2'>
         {items.map(item => (
           <li key={item.name}>

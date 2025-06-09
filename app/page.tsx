@@ -6,6 +6,7 @@ import { Outfit } from 'next/font/google'
 const outfit = Outfit({
   subsets: ['latin']
 })
+
 export default function Home (): ReactElement {
   const title = 'Taking Care of Business'
 
