@@ -75,10 +75,11 @@ function processData (rawData: RawMovie[]) {
         ticketURI: s.ticketURI ?? ''
       })
 
-      if (!theaters.find(t => t.id === s.theatre.id)) {
+      if (theaters.find(t => t.id === s.theatre.id) == null) {
         theaters.push({
           id: s.theatre.id,
-          name: s.theatre.name})
+          name: s.theatre.name
+        })
       }
     })
   })

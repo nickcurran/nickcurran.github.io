@@ -7,14 +7,14 @@ import { Data } from './movieTypes'
 import MovieView from './movieView'
 import Menu from '@/components/Menu'
 
-export default function MoviesPage() {
+export default function MoviesPage () {
   const [zipCode, setZipCode] = useState('55407')
   const [radius, setRadius] = useState('10')
   // const [mode, setMode] = useState('movies')
   const mode = 'movies'
   const [data, setData] = useState({ movies: [], theaters: [], showtimes: [] } as Data)
 
-  async function handleSubmit(event: FormEvent) {
+  async function handleSubmit (event: FormEvent) {
     event.preventDefault() // Prevent the default form submission behavior
     const data = await getData(zipCode, radius)
     setData(data)

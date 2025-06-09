@@ -14,7 +14,7 @@ const outfit = Outfit({
 const items = [
   { name: 'TCOB', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Photos', href: 'https://photos.tcob.com' },
+  { name: 'Photos', href: '/photos' },
   { name: 'Movies', href: '/movies' }
 ]
 
@@ -42,7 +42,6 @@ const socials = [
 ]
 
 export default function Menu (): ReactElement {
-
   const pathname = usePathname()
 
   return (
@@ -50,7 +49,7 @@ export default function Menu (): ReactElement {
       <ul className='flex flex-1 space-x-2'>
         {items.map(item => (
           <li key={item.name}>
-            <Link href={item.href} className={`${ pathname === item.href ? 'border-b-4' : ''}`}>
+            <Link href={item.href} className={`${pathname === item.href ? 'border-b-4' : ''}`}>
               {item.name}
             </Link>
           </li>

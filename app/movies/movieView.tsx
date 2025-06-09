@@ -3,12 +3,11 @@ import { Movie, Data, Theater } from './movieTypes'
 import Image from 'next/image'
 const imageBaseUrl = 'https://www.tmsimg.com/assets/'
 
-const imageLoader = ({ src } : { src: string }) => {
+const imageLoader = ({ src }: { src: string }) => {
   return `${imageBaseUrl}${src}`
 }
 
-export default function MovieView({ movie, data }: { movie: Movie, data: Data }) {
-
+export default function MovieView ({ movie, data }: { movie: Movie, data: Data }) {
   const showtimes = data.showtimes.filter(s => s.movieId === movie.tmsId)
   const theaterIds = showtimes.map(s => s.theatreId).reduce((acc, id) => {
     acc.add(id)
@@ -20,7 +19,7 @@ export default function MovieView({ movie, data }: { movie: Movie, data: Data })
     .filter((t): t is Theater => t !== undefined) // filter out any undefined theaters
     .sort((a: Theater, b: Theater) => a.name.localeCompare(b.name))
 
-  const imgUrl = movie.preferredImage.uri.indexOf('generic') == -1 ? `${movie.preferredImage.uri}` : null
+  const imgUrl = !movie.preferredImage.uri.includes('generic') ? `${movie.preferredImage.uri}` : null
 
   return (
     <div className='pt-8 clear-both'>
@@ -39,7 +38,7 @@ export default function MovieView({ movie, data }: { movie: Movie, data: Data })
               <ul>
                 {theaterShowtimes.map((s, idx) => (
                   <li key={`${s.theatreId}-${idx}`} className='inline-block mr-4'>
-                    {s.ticketURI && <a href={s.ticketURI} target="_blank" rel="noopener noreferrer">{s.time}</a>}
+                    {s.ticketURI && <a href={s.ticketURI} target='_blank' rel='noopener noreferrer'>{s.time}</a>}
                     {!s.ticketURI && <span>{s.time}</span>}
                   </li>
                 ))}
