@@ -7,7 +7,7 @@ interface StoryProps {
 
 export default function StoryLayout (props: Readonly<StoryProps>): ReactElement {
   return (
-    <div>
+    <div className='flex-1'>
       <Menu />
       <div id='story'>
         {props.children}
