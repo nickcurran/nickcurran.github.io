@@ -2,8 +2,8 @@ import moment from 'moment'
 
 import { Movie, Theater, Showtime, RawMovie, RawShowtime, Data } from './movieTypes'
 
-const api = 'https://data.tmsapi.com/v1.1/movies/showings'
-const apiKey = '6vb58mje68k3z6gavqfkmtfe'
+const api: string = 'https://data.tmsapi.com/v1.1/movies/showings'
+const apiKey: string = '6vb58mje68k3z6gavqfkmtfe'
 
 function timeString (dateTime: string): string {
   return moment(dateTime).format('h:mm a')
@@ -57,7 +57,7 @@ function convertMovie (raw: RawMovie): Movie {
   }
 }
 
-function processData (rawData: RawMovie[]) {
+function processData (rawData: RawMovie[]): Data {
   const rawMovies = rawData.sort(titleSort)
   const movies: Movie[] = rawMovies.map(convertMovie)
   const showtimes: Showtime[] = []
@@ -94,10 +94,20 @@ function processData (rawData: RawMovie[]) {
 export async function getData (zipCode: string, radius: string): Promise<Data> {
   const date = new Date()
   const dateParam = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
+  const paramString = `startDate=${dateParam}&zip=${zipCode}&radius=${radius}`
+
+  const stored = localStorage.getItem(paramString) ?? ''
+
+  if (stored.length > 0) {
+    return JSON.parse(stored) as Data
+  }
+
   const moviesUrl = `${api}?startDate=${dateParam}&zip=${zipCode}&radius=${radius}&api_key=${apiKey}`
 
   const result = await fetch(moviesUrl)
   const rawData: RawMovie[] = await result.json()
 
-  return processData(rawData)
+  const data = processData(rawData)
+  localStorage.setItem(paramString, JSON.stringify(data))
+  return data
 }

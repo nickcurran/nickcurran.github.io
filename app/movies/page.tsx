@@ -1,23 +1,51 @@
 'use client'
 
-import { useState, FormEvent } from 'react'
+import React, { useState, ChangeEvent, useEffect } from 'react'
 
 import { getData } from './service'
 import { Data } from './movieTypes'
 import MovieView from './movieView'
 import Menu from '@/components/Menu'
+import { TheaterView } from './theaterView'
 
-export default function MoviesPage () {
-  const [zipCode, setZipCode] = useState('55407')
+export default function MoviesPage (): React.ReactElement {
+  const [zipCode, setZipCode] = useState('')
   const [radius, setRadius] = useState('10')
-  // const [mode, setMode] = useState('movies')
-  const mode = 'movies'
-  const [data, setData] = useState({ movies: [], theaters: [], showtimes: [] } as Data)
+  const [mode, setMode] = useState('movies')
+  const [data, setData] = useState<Data>({ movies: [], theaters: [], showtimes: [] })
 
-  async function handleSubmit (event: FormEvent) {
-    event.preventDefault() // Prevent the default form submission behavior
-    const data = await getData(zipCode, radius)
-    setData(data)
+  async function fetchData (): Promise<void> {
+    if (zipCode.length === 5) { // Only fetch data if zip code is valid
+      const data = await getData(zipCode, radius)
+      setData(data)
+    }
+  }
+
+  useEffect(() => {
+    const storedZipCode = localStorage.getItem('zipCode')
+    const storedRadius = localStorage.getItem('radius')
+    if (storedZipCode !== null) {
+      setZipCode(storedZipCode)
+    }
+    if (storedRadius !== null) {
+      setRadius(storedRadius)
+    }
+  }, [])
+
+  useEffect(() => {
+    void fetchData()
+  }, [zipCode, radius]) // Add dependency array to avoid running on every render
+
+  function zipCodeChange (event: ChangeEvent<HTMLInputElement>): void {
+    const newZipCode = event.target.value
+    setZipCode(newZipCode)
+    localStorage.setItem('zipCode', newZipCode) // Save zip code to local storage
+  }
+
+  function radiusChange (event: ChangeEvent<HTMLSelectElement>): void {
+    const newRadius = event.target.value
+    setRadius(newRadius)
+    localStorage.setItem('radius', newRadius) // Save radius to local storage
   }
 
   return (
@@ -29,13 +57,14 @@ export default function MoviesPage () {
         <section className='mt-2'>
           <input
             type='text'
+            data-1p-ignore
             value={zipCode}
-            onChange={e => setZipCode(e.target.value)}
+            onChange={zipCodeChange}
             placeholder='zip code'
             className='border border-gray-300 rounded-md w-[100px] p-2 mb-4 text-center'
           />
 
-          <select value={radius} onChange={e => setRadius(e.target.value)} className='ml-4'>
+          <select value={radius} onChange={radiusChange} className='ml-4'>
             <option value='5'>5 miles</option>
             <option value='10'>10 miles</option>
             <option value='15'>15 miles</option>
@@ -43,24 +72,20 @@ export default function MoviesPage () {
             <option value='25'>25 miles</option>
           </select>
 
-          {/* <select value={mode} onChange={(e) => setMode(e.target.value)} className='ml-4'>
+          <select value={mode} onChange={(e) => setMode(e.target.value)} className='ml-4'>
             <option value='movies'>Movies</option>
             <option value='theaters'>Theaters</option>
-          </select> */}
-
-          <button onClick={handleSubmit} className='bg-blue-500 text-white px-4 py-2 rounded ml-4'>
-            Submit
-          </button>
+          </select>
         </section>
 
         <section>
           <ul>
-            {/* {mode == 'theaters' && data.theaters.map(t => (
+            {mode === 'theaters' && data.theaters.map(t => (
               <li key={t.id}>
-                {t.name}
+                <TheaterView theater={t} data={data} />
               </li>
-            ))} */}
-            {mode == 'movies' && data.movies.map(m => (
+            ))}
+            {mode === 'movies' && data.movies.map(m => (
               <li key={m.tmsId}>
                 <MovieView movie={m} data={data} />
               </li>
