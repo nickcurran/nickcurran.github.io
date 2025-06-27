@@ -24,6 +24,10 @@ export default function MoviesPage (): React.ReactElement {
   useEffect(() => {
     const storedZipCode = localStorage.getItem('zipCode')
     const storedRadius = localStorage.getItem('radius')
+    const storedMode = localStorage.getItem('mode')
+    if (storedMode !== null) {
+      setMode(storedMode)
+    }
     if (storedZipCode !== null) {
       setZipCode(storedZipCode)
     }
@@ -46,6 +50,12 @@ export default function MoviesPage (): React.ReactElement {
     const newRadius = event.target.value
     setRadius(newRadius)
     localStorage.setItem('radius', newRadius) // Save radius to local storage
+  }
+
+  function modeChange (event: ChangeEvent<HTMLSelectElement>): void {
+    const newMode = event.target.value
+    setMode(newMode)
+    localStorage.setItem('mode', newMode) // Save mode to local storage
   }
 
   return (
@@ -72,7 +82,7 @@ export default function MoviesPage (): React.ReactElement {
             <option value='25'>25 miles</option>
           </select>
 
-          <select value={mode} onChange={(e) => setMode(e.target.value)} className='ml-4'>
+          <select value={mode} onChange={modeChange} className='ml-4'>
             <option value='movies'>Movies</option>
             <option value='theaters'>Theaters</option>
           </select>
