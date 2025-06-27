@@ -16,7 +16,7 @@ export function TheaterView ({ theater, data }: { theater: Theater, data: Data }
     .sort((a: Movie, b: Movie) => a.title.localeCompare(b.title))
 
   return (
-    <div className='flex-1 mb-4 pt-2'>
+    <li className='flex-1 mb-10 pt-2'>
       <h1 className='text-2xl'>{theater.name}</h1>
 
       <ul>
@@ -40,6 +40,6 @@ export function TheaterView ({ theater, data }: { theater: Theater, data: Data }
           </li>
         ))}
       </ul>
-    </div>
+    </li>
   )
 }

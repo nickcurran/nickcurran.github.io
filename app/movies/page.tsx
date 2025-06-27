@@ -8,13 +8,13 @@ import MovieView from './movieView'
 import Menu from '@/components/Menu'
 import { TheaterView } from './theaterView'
 
-export default function MoviesPage (): React.ReactElement {
+export default function MoviesPage(): React.ReactElement {
   const [zipCode, setZipCode] = useState('')
   const [radius, setRadius] = useState('10')
   const [mode, setMode] = useState('movies')
   const [data, setData] = useState<Data>({ movies: [], theaters: [], showtimes: [] })
 
-  async function fetchData (): Promise<void> {
+  async function fetchData(): Promise<void> {
     if (zipCode.length === 5) { // Only fetch data if zip code is valid
       const data = await getData(zipCode, radius)
       setData(data)
@@ -40,19 +40,19 @@ export default function MoviesPage (): React.ReactElement {
     void fetchData()
   }, [zipCode, radius]) // Add dependency array to avoid running on every render
 
-  function zipCodeChange (event: ChangeEvent<HTMLInputElement>): void {
+  function zipCodeChange(event: ChangeEvent<HTMLInputElement>): void {
     const newZipCode = event.target.value
     setZipCode(newZipCode)
     localStorage.setItem('zipCode', newZipCode) // Save zip code to local storage
   }
 
-  function radiusChange (event: ChangeEvent<HTMLSelectElement>): void {
+  function radiusChange(event: ChangeEvent<HTMLSelectElement>): void {
     const newRadius = event.target.value
     setRadius(newRadius)
     localStorage.setItem('radius', newRadius) // Save radius to local storage
   }
 
-  function modeChange (event: ChangeEvent<HTMLSelectElement>): void {
+  function modeChange(event: ChangeEvent<HTMLSelectElement>): void {
     const newMode = event.target.value
     setMode(newMode)
     localStorage.setItem('mode', newMode) // Save mode to local storage
@@ -91,14 +91,10 @@ export default function MoviesPage (): React.ReactElement {
         <section>
           <ul>
             {mode === 'theaters' && data.theaters.map(t => (
-              <li key={t.id}>
-                <TheaterView theater={t} data={data} />
-              </li>
+              <TheaterView key={t.id} theater={t} data={data} />
             ))}
             {mode === 'movies' && data.movies.map(m => (
-              <li key={m.tmsId}>
-                <MovieView movie={m} data={data} />
-              </li>
+              <MovieView key={m.tmsId} movie={m} data={data} />
             ))}
           </ul>
         </section>

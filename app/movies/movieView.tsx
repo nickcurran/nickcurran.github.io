@@ -22,9 +22,9 @@ export default function MovieView ({ movie, data }: { movie: Movie, data: Data }
   const imgUrl = typeof movie.preferredImage.uri === 'string' && !movie.preferredImage.uri.includes('generic') ? `${movie.preferredImage.uri}` : null
 
   return (
-    <div className='pt-2 clear-both'>
+    <li className='pt-2 mb-12 clear-both'>
       {imgUrl !== null && (
-        <Image src={imgUrl} loader={imageLoader} width='160' height='240' alt={movie.title} className='rounded-md float-right clear-both ml-3' />
+        <Image src={imgUrl} loader={imageLoader} width='160' height='240' alt={movie.title} className='mb-12 rounded-md float-right clear-both ml-8' />
       )}
 
       <h1 className='text-2xl'>{movie.title}</h1>
@@ -54,6 +54,6 @@ export default function MovieView ({ movie, data }: { movie: Movie, data: Data }
           )
         })}
       </ul>
-    </div>
+    </li>
   )
 }
