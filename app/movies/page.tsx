@@ -69,13 +69,13 @@ export default function MoviesPage(): React.ReactElement {
   }
 
   function filterMovie(tmsId: string): void {
-    let newFilters = { ...filters, movies: [...filters.movies, tmsId] }
+    const newFilters = { ...filters, movies: [...filters.movies, tmsId] }
     setFilters(newFilters)
     saveFilters(newFilters)
   }
 
   function filterTheater(theaterId: string): void {
-    let newFilters = { ...filters, theaters: [...filters.theaters, theaterId] }
+    const newFilters = { ...filters, theaters: [...filters.theaters, theaterId] }
     setFilters(newFilters)
     saveFilters(newFilters)
   }
@@ -130,9 +130,10 @@ export default function MoviesPage(): React.ReactElement {
                 key={t.id}
                 theater={t}
                 data={data}
-                filters={filters}
-                onFilterMovie={filterMovie}
-                onFilterTheater={filterTheater} />
+                // filters={filters}
+                // onFilterMovie={filterMovie}
+                // onFilterTheater={filterTheater}
+                 />
             ))}
             {mode === 'movies' && movies.map(m => (
               <MovieView

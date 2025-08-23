@@ -1,4 +1,4 @@
-import { ReactElement, useState } from 'react'
+import { ReactElement } from 'react'
 import { Movie, Data, Theater, Filters } from './movieTypes'
 import Image from 'next/image'
 const imageBaseUrl = 'https://www.tmsimg.com/assets/'
@@ -15,9 +15,7 @@ interface MovieViewProps {
   onFilterTheater: (theaterId: string) => void
 }
 
-export default function MovieView ({ movie, data, filters, onFilterMovie, onFilterTheater }: MovieViewProps): ReactElement {
-
-  const [showMovieMenu, setShowMovieMenu] = useState(false)
+export default function MovieView ({ movie, data, onFilterMovie }: MovieViewProps): ReactElement {
 
   const showtimes = data.showtimes.filter(s => s.movieId === movie.tmsId)
   const theaterIds = showtimes.map(s => s.theatreId).reduce((acc, id) => {
@@ -32,10 +30,6 @@ export default function MovieView ({ movie, data, filters, onFilterMovie, onFilt
 
   const imgUrl = typeof movie.preferredImage.uri === 'string' && !movie.preferredImage.uri.includes('generic') ? `${movie.preferredImage.uri}` : null
 
-  function toggleMovieMenu (): void {
-    setShowMovieMenu(!showMovieMenu)
-  }
-
   return (
     <li className='pt-2 mb-12 clear-both'>
       {imgUrl !== null && (
@@ -43,7 +37,7 @@ export default function MovieView ({ movie, data, filters, onFilterMovie, onFilt
       )}
 
       <div className='relative'>
-  <h1 className='text-2xl hover:line-through cursor-pointer' onClick={() => onFilterMovie(movie.tmsId)}>{movie.title}</h1>
+        <h1 className='text-2xl' onClick={() => onFilterMovie(movie.tmsId)}>{movie.title}</h1>
       </div>
       <p>{movie.longDescription}</p>
 
