@@ -1,5 +1,5 @@
-import { ReactElement } from 'react'
-import { Movie, Data, Theater } from './movieTypes'
+import { ReactElement, useState } from 'react'
+import { Movie, Data, Theater, Filters } from './movieTypes'
 import Image from 'next/image'
 const imageBaseUrl = 'https://www.tmsimg.com/assets/'
 
@@ -7,7 +7,18 @@ function imageLoader ({ src }: { src: string }): string {
   return `${imageBaseUrl}${src}`
 }
 
-export default function MovieView ({ movie, data }: { movie: Movie, data: Data }): ReactElement {
+interface MovieViewProps {
+  movie: Movie
+  data: Data
+  filters: Filters
+  onFilterMovie: (tmsId: string) => void
+  onFilterTheater: (theaterId: string) => void
+}
+
+export default function MovieView ({ movie, data, filters, onFilterMovie, onFilterTheater }: MovieViewProps): ReactElement {
+
+  const [showMovieMenu, setShowMovieMenu] = useState(false)
+
   const showtimes = data.showtimes.filter(s => s.movieId === movie.tmsId)
   const theaterIds = showtimes.map(s => s.theatreId).reduce((acc, id) => {
     acc.add(id)
@@ -21,13 +32,19 @@ export default function MovieView ({ movie, data }: { movie: Movie, data: Data }
 
   const imgUrl = typeof movie.preferredImage.uri === 'string' && !movie.preferredImage.uri.includes('generic') ? `${movie.preferredImage.uri}` : null
 
+  function toggleMovieMenu (): void {
+    setShowMovieMenu(!showMovieMenu)
+  }
+
   return (
     <li className='pt-2 mb-12 clear-both'>
       {imgUrl !== null && (
         <Image src={imgUrl} loader={imageLoader} width='160' height='240' alt={movie.title} className='mb-12 rounded-md float-right clear-both ml-8' />
       )}
 
-      <h1 className='text-2xl'>{movie.title}</h1>
+      <div className='relative'>
+  <h1 className='text-2xl hover:line-through cursor-pointer' onClick={() => onFilterMovie(movie.tmsId)}>{movie.title}</h1>
+      </div>
       <p>{movie.longDescription}</p>
 
       <ul>

@@ -3,7 +3,7 @@
 import React, { useState, ChangeEvent, useEffect } from 'react'
 
 import { getData } from './service'
-import { Data } from './movieTypes'
+import { Data, Filters } from './movieTypes'
 import MovieView from './movieView'
 import Menu from '@/components/Menu'
 import { TheaterView } from './theaterView'
@@ -13,6 +13,7 @@ export default function MoviesPage(): React.ReactElement {
   const [radius, setRadius] = useState('10')
   const [mode, setMode] = useState('movies')
   const [data, setData] = useState<Data>({ movies: [], theaters: [], showtimes: [] })
+  const [filters, setFilters] = useState<Filters>({ movies: [], theaters: [] })
 
   async function fetchData(): Promise<void> {
     if (zipCode.length === 5) { // Only fetch data if zip code is valid
@@ -25,6 +26,8 @@ export default function MoviesPage(): React.ReactElement {
     const storedZipCode = localStorage.getItem('zipCode')
     const storedRadius = localStorage.getItem('radius')
     const storedMode = localStorage.getItem('mode')
+    const storedFilters = localStorage.getItem('filters')
+
     if (storedMode !== null) {
       setMode(storedMode)
     }
@@ -33,6 +36,9 @@ export default function MoviesPage(): React.ReactElement {
     }
     if (storedRadius !== null) {
       setRadius(storedRadius)
+    }
+    if (storedFilters !== null) {
+      setFilters(JSON.parse(storedFilters))
     }
   }, [])
 
@@ -57,6 +63,31 @@ export default function MoviesPage(): React.ReactElement {
     setMode(newMode)
     localStorage.setItem('mode', newMode) // Save mode to local storage
   }
+
+  function saveFilters(newFilters: Filters): void {
+    localStorage.setItem('filters', JSON.stringify(newFilters))
+  }
+
+  function filterMovie(tmsId: string): void {
+    let newFilters = { ...filters, movies: [...filters.movies, tmsId] }
+    setFilters(newFilters)
+    saveFilters(newFilters)
+  }
+
+  function filterTheater(theaterId: string): void {
+    let newFilters = { ...filters, theaters: [...filters.theaters, theaterId] }
+    setFilters(newFilters)
+    saveFilters(newFilters)
+  }
+
+  function clearFilters(): void {
+    setFilters({ movies: [], theaters: [] })
+    saveFilters({ movies: [], theaters: [] })
+  }
+
+  const theaters = data.theaters
+  const movies = data.movies.filter(m => !filters.movies.includes(m.tmsId))
+  const isFiltered = filters.movies.length > 0 || filters.theaters.length > 0
 
   return (
     <div className='max-w-[800px] w-full flex-1'>
@@ -86,15 +117,31 @@ export default function MoviesPage(): React.ReactElement {
             <option value='movies'>Movies</option>
             <option value='theaters'>Theaters</option>
           </select>
+
+          {isFiltered && (
+            <button onClick={clearFilters} className='ml-4'>Clear Filters</button>
+          )}
         </section>
 
         <section>
           <ul>
-            {mode === 'theaters' && data.theaters.map(t => (
-              <TheaterView key={t.id} theater={t} data={data} />
+            {mode === 'theaters' && theaters.map(t => (
+              <TheaterView
+                key={t.id}
+                theater={t}
+                data={data}
+                filters={filters}
+                onFilterMovie={filterMovie}
+                onFilterTheater={filterTheater} />
             ))}
-            {mode === 'movies' && data.movies.map(m => (
-              <MovieView key={m.tmsId} movie={m} data={data} />
+            {mode === 'movies' && movies.map(m => (
+              <MovieView
+                key={m.tmsId}
+                movie={m}
+                data={data}
+                filters={filters}
+                onFilterMovie={filterMovie}
+                onFilterTheater={filterTheater} />
             ))}
           </ul>
         </section>
