@@ -43,12 +43,7 @@ export default function MovieView ({ movie, data, filters, onFilterMovie, onFilt
       )}
 
       <div className='relative'>
-        <h1 className='text-2xl' onClick={toggleMovieMenu}>{movie.title}</h1>
-        {showMovieMenu && (
-          <div className='absolute top-0 left-0 bg-white shadow-lg rounded-lg p-4 z-20'>
-            <button onClick={() => onFilterMovie(movie.tmsId)} className='text-sm text-blue-500 hover:underline'>Hide</button>
-          </div>
-        )}
+  <h1 className='text-2xl hover:line-through cursor-pointer' onClick={() => onFilterMovie(movie.tmsId)}>{movie.title}</h1>
       </div>
       <p>{movie.longDescription}</p>
 
