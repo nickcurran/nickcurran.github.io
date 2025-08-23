@@ -59,7 +59,7 @@ export default function Menu (): ReactElement {
           </svg>
         </button>
         {menuOpen && (
-          <div className="absolute left-1/2 transform -translate-x-1/2 mt-0 bg-white rounded-lg shadow-lg p-4 z-40 min-w-[220px] w-max">
+          <div className="absolute left-1/2 transform -translate-x-1/2 mt-0 bg-white dark:bg-black rounded-lg shadow-lg p-4 z-40 min-w-[220px] w-max">
             <ul className="flex flex-row space-x-4 justify-center mb-4">
               {items.map(item => (
                 <li key={item.name}>
