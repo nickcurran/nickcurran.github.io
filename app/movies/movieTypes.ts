@@ -102,3 +102,8 @@ export interface Data {
   theaters: Theater[]
   showtimes: Showtime[]
 }
+
+export interface Filters {
+  movies: string[]
+  theaters: string[]
+}
