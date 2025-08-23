@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import { ReactElement, useState } from 'react'
 import { Movie, Data, Theater, Filters } from './movieTypes'
 import Image from 'next/image'
 const imageBaseUrl = 'https://www.tmsimg.com/assets/'
@@ -16,6 +16,8 @@ interface MovieViewProps {
 }
 
 export default function MovieView ({ movie, data, onFilterMovie }: MovieViewProps): ReactElement {
+
+  const [showHide, setShowHide] = useState(false)
 
   const showtimes = data.showtimes.filter(s => s.movieId === movie.tmsId)
   const theaterIds = showtimes.map(s => s.theatreId).reduce((acc, id) => {
@@ -36,8 +38,13 @@ export default function MovieView ({ movie, data, onFilterMovie }: MovieViewProp
         <Image src={imgUrl} loader={imageLoader} width='160' height='240' alt={movie.title} className='mb-12 rounded-md float-right clear-both ml-8' />
       )}
 
-      <div className='relative'>
-        <h1 className='text-2xl' onClick={() => onFilterMovie(movie.tmsId)}>{movie.title}</h1>
+      <div className='flex items-center'>
+        <h1 className='text-2xl inline-block' onClick={() => setShowHide(!showHide)}>{movie.title}</h1>
+        {showHide && (
+          <span>
+            <button className='ml-4 text-sm' onClick={() => onFilterMovie(movie.tmsId)}><em>Hide</em>?</button>
+          </span>
+        )}
       </div>
       <p>{movie.longDescription}</p>
 
