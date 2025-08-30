@@ -25,7 +25,7 @@ function comparableTitle (title: string): string {
   return title
 }
 
-function titleSort (a: Movie, b: Movie): number {
+export function titleSort (a: Movie, b: Movie): number {
   const aTitle = comparableTitle(a.title)
   const bTitle = comparableTitle(b.title)
   return aTitle.localeCompare(bTitle)

@@ -1,11 +1,23 @@
 import { ReactElement } from 'react'
-import { Movie, Theater, Data } from './movieTypes'
+import { Movie, Theater, Data, Filters } from './movieTypes'
+import { titleSort } from './service'
 
-export function TheaterView ({ theater, data }: { theater: Theater, data: Data }): ReactElement {
-  
+interface TheaterViewProps {
+  theater: Theater
+  data: Data
+  filters: Filters
+  onFilterMovie: (tmsId: string) => void
+  onFilterTheater: (theaterId: string) => void
+}
+
+export function TheaterView ({ theater, data, filters }: TheaterViewProps): ReactElement | null {
+
   const showtimes = data.showtimes.filter(s => s.theatreId === theater.id)
   
-  const movieIds = showtimes.map(s => s.movieId).reduce((acc, id) => {
+  const movieIds = showtimes
+    .map(s => s.movieId)
+    .filter(id => !filters.movies.includes(id))
+    .reduce((acc, id) => {
     acc.add(id)
     return acc
   }, new Set<string>())
@@ -13,7 +25,7 @@ export function TheaterView ({ theater, data }: { theater: Theater, data: Data }
   const movies = [...movieIds]
     .map(id => data.movies.find(m => m.tmsId === id))
     .filter((m): m is Movie => m !== undefined) // filter out any undefined movies
-    .sort((a: Movie, b: Movie) => a.title.localeCompare(b.title))
+    .sort(titleSort)
 
   return (
     <li className='flex-1 mb-10 pt-2'>

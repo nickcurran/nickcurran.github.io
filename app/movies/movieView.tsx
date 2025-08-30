@@ -1,6 +1,8 @@
 import { ReactElement, useState } from 'react'
 import { Movie, Data, Theater, Filters } from './movieTypes'
+import MovieTheaterView from './movieTheaterView'
 import Image from 'next/image'
+
 const imageBaseUrl = 'https://www.tmsimg.com/assets/'
 
 function imageLoader ({ src }: { src: string }): string {
@@ -15,12 +17,15 @@ interface MovieViewProps {
   onFilterTheater: (theaterId: string) => void
 }
 
-export default function MovieView ({ movie, data, onFilterMovie }: MovieViewProps): ReactElement {
+export default function MovieView ({ movie, data, filters, onFilterMovie, onFilterTheater }: MovieViewProps): ReactElement | null {
 
   const [showHide, setShowHide] = useState(false)
 
   const showtimes = data.showtimes.filter(s => s.movieId === movie.tmsId)
-  const theaterIds = showtimes.map(s => s.theatreId).reduce((acc, id) => {
+  const theaterIds = showtimes
+    .map(s => s.theatreId)
+    .filter(id => !filters.theaters.includes(id))
+    .reduce((acc, id) => {
     acc.add(id)
     return acc
   }, new Set<string>())
@@ -29,6 +34,10 @@ export default function MovieView ({ movie, data, onFilterMovie }: MovieViewProp
     .map(id => data.theaters.find(t => t.id === id))
     .filter((t): t is Theater => t !== undefined) // filter out any undefined theaters
     .sort((a: Theater, b: Theater) => a.name.localeCompare(b.name))
+
+  if (theaters.length === 0) {
+    return null
+  }
 
   const imgUrl = typeof movie.preferredImage.uri === 'string' && !movie.preferredImage.uri.includes('generic') ? `${movie.preferredImage.uri}` : null
 
@@ -49,26 +58,11 @@ export default function MovieView ({ movie, data, onFilterMovie }: MovieViewProp
       <p>{movie.longDescription}</p>
 
       <ul>
-        {theaters.map((theater) => {
+        {theaters.map(theater => {
           const theaterShowtimes = showtimes.filter(s => s.theatreId === theater.id)
 
           return (
-            <li key={theater.id} className='mt-2'>
-              <h2 className='text-xl'>{theater.name}</h2>
-              <ul>
-                {theaterShowtimes.map((s, idx) => (
-                  <li key={`${s.theatreId ?? idx}-${idx}`} className='inline-block mr-4'>
-                    {s.ticketURI !== null
-                      ? (
-                        <a href={s.ticketURI} target='_blank' rel='noopener noreferrer'>{s.time}</a>
-                        )
-                      : (
-                        <span>{s.time}</span>
-                        )}
-                  </li>
-                ))}
-              </ul>
-            </li>
+            <MovieTheaterView key={theater.id} theater={theater} showtimes={theaterShowtimes} onFilterTheater={onFilterTheater} />
           )
         })}
       </ul>
