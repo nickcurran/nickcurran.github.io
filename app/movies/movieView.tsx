@@ -1,6 +1,6 @@
 import { ReactElement, useState } from 'react'
 import { Movie, Data, Theater, Filters } from './movieTypes'
-import MovieTheaterView from './movieTheaterView'
+import MovieShowingsView from './movieShowingsView'
 import Image from 'next/image'
 
 const imageBaseUrl = 'https://www.tmsimg.com/assets/'
@@ -62,7 +62,7 @@ export default function MovieView ({ movie, data, filters, onFilterMovie, onFilt
           const theaterShowtimes = showtimes.filter(s => s.theatreId === theater.id)
 
           return (
-            <MovieTheaterView key={theater.id} theater={theater} showtimes={theaterShowtimes} onFilterTheater={onFilterTheater} />
+            <MovieShowingsView key={theater.id} theater={theater} showtimes={theaterShowtimes} onFilterTheater={onFilterTheater} />
           )
         })}
       </ul>

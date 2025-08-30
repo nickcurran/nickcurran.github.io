@@ -1,13 +1,15 @@
 import { ReactElement, useState } from 'react'
 import { Showtime, Theater  } from './movieTypes'
+import ShowtimesView
+ from './showtimesView'
 
-interface MovieTheaterViewProps {
+interface MovieShowingsViewProps {
   theater: Theater
   showtimes: Showtime[]
   onFilterTheater: (theaterId: string) => void
 }
 
-export default function MovieTheaterView ({ theater, showtimes, onFilterTheater }: MovieTheaterViewProps): ReactElement {
+export default function MovieShowingsView ({ theater, showtimes, onFilterTheater }: MovieShowingsViewProps): ReactElement {
 
   const [showHide, setShowHide] = useState(false)
 
@@ -21,21 +23,8 @@ export default function MovieTheaterView ({ theater, showtimes, onFilterTheater 
           </span>
         )}
       </div>
-      
-      <ul>
-        {showtimes.map((s, idx) => (
-          <li key={`${s.theatreId ?? idx}-${idx}`} className='inline-block mr-4'>
-            {s.ticketURI !== null
-              ? (
-                <a href={s.ticketURI} target='_blank' rel='noopener noreferrer'>{s.time}</a>
-                )
-              : (
-                <span>{s.time}</span>
-                )
-            }
-          </li>
-        ))}
-      </ul>
+
+      <ShowtimesView showtimes={showtimes} />
     </li>
   )
 }

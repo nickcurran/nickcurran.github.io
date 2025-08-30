@@ -1,7 +1,7 @@
-import { ReactElement } from 'react'
+import { ReactElement, useState } from 'react'
 import { Movie, Theater, Data, Filters } from './movieTypes'
 import { titleSort } from './service'
-
+import TheaterShowingsView from './theaterShowingsView'
 interface TheaterViewProps {
   theater: Theater
   data: Data
@@ -10,7 +10,9 @@ interface TheaterViewProps {
   onFilterTheater: (theaterId: string) => void
 }
 
-export function TheaterView ({ theater, data, filters }: TheaterViewProps): ReactElement | null {
+export function TheaterView ({ theater, data, filters, onFilterMovie, onFilterTheater }: TheaterViewProps): ReactElement | null {
+
+  const [showHide, setShowHide] = useState(false)
 
   const showtimes = data.showtimes.filter(s => s.theatreId === theater.id)
   
@@ -29,28 +31,29 @@ export function TheaterView ({ theater, data, filters }: TheaterViewProps): Reac
 
   return (
     <li className='flex-1 mb-10 pt-2'>
-      <h1 className='text-2xl'>{theater.name}</h1>
+      <div className='flex items-center'>
+        <h1 className='text-2xl' onClick={() => setShowHide(!showHide)}>{theater.name}</h1>
+        {showHide && (
+          <span>
+            <button className='ml-4 text-sm' onClick={() => onFilterTheater(theater.id)}><em>Hide</em>?</button>
+          </span>
+        )}
+      </div>
 
       <ul>
-        {movies.map((movie) => (
-          <li key={movie.tmsId}>
-            <h2 className='text-xl mt-2'>{movie.title}</h2>
+        {movies.map(movie => {
 
-            <ul>
-              {showtimes.filter(s => s.movieId === movie.tmsId).map((s, idx) => (
-                <li key={`${s.theatreId ?? idx}-${idx}`} className='inline-block mr-4'>
-                  {s.ticketURI !== null
-                    ? (
-                      <a href={s.ticketURI} target='_blank' rel='noopener noreferrer'>{s.time}</a>
-                      )
-                    : (
-                      <span>{s.time}</span>
-                      )}
-                </li>
-              ))}
-            </ul>
-          </li>
-        ))}
+          const movieShowtimes = showtimes.filter(s => s.movieId === movie.tmsId)
+
+          return (
+            <TheaterShowingsView
+              key={movie.tmsId}
+              movie={movie}
+              showtimes={movieShowtimes}
+              onFilterMovie={onFilterMovie}
+            />
+          )
+        })}
       </ul>
     </li>
   )
