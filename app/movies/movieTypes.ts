@@ -92,7 +92,7 @@ export interface Showtime {
   movieId: string
   dateTime: string
   time: string
-  quals?: string
+  quals: string[]
   barg: boolean
   ticketURI?: string
 }

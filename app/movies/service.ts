@@ -59,21 +59,41 @@ function convertMovie (raw: RawMovie): Movie {
 
 function processData (rawData: RawMovie[]): Data {
   const rawMovies = rawData.sort(titleSort)
-  const movies: Movie[] = rawMovies.map(convertMovie)
   const showtimes: Showtime[] = []
   const theaters: Theater[] = []
 
+  const movies: Movie[] = []
+  
   rawMovies.forEach(rm => {
-    rm.showtimes.forEach((s: RawShowtime) => {
-      showtimes.push({
+    if (!movies.find(m => m.rootId === rm.rootId)) {
+      movies.push(convertMovie(rm))
+    }
+  })
+
+  rawMovies.forEach(rm => {
+    rm.showtimes.forEach(s => {
+      const showtime: Showtime ={
         theatreId: s.theatre.id,
         movieId: rm.tmsId,
         dateTime: s.dateTime,
         time: timeString(s.dateTime),
-        quals: s.quals ?? '',
+        quals: (s.quals ?? '').split('|').map(q => q.trim()),
         barg: s.barg,
         ticketURI: s.ticketURI ?? ''
-      })
+      }
+      
+      if (!movies.find(m => m.tmsId === showtime.movieId)) {
+        const parent = movies.find(m => m.rootId === rm.rootId)
+        if (!parent) { return }
+
+        const shorterTitle = parent.title
+        const longerTitle = rm.title
+        const extraPart = longerTitle.replace(shorterTitle, '').trim()
+        showtime.quals.push(extraPart)
+        showtime.movieId = parent.tmsId
+      }
+
+      showtimes.push(showtime)
 
       if (theaters.find(t => t.id === s.theatre.id) == null) {
         theaters.push({
