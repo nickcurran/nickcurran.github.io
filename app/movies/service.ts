@@ -72,12 +72,30 @@ function processData (rawData: RawMovie[]): Data {
 
   rawMovies.forEach(rm => {
     rm.showtimes.forEach(s => {
+      const quals = s.quals ? s.quals.split('|').map(q => q.trim()) : []
+
+      // quals = quals.map(q => {
+      //   if (q === 'Closed Captioned') {
+      //     return 'CC'
+      //   }
+
+      //   if (q === 'Descriptive Video Service') {
+      //     return 'DVS'
+      //   }
+
+      //   if (q === 'Reserved Seating') {
+      //     return 'Reserved'
+      //   }
+
+      //   return q
+      // })
+
       const showtime: Showtime ={
         theatreId: s.theatre.id,
         movieId: rm.tmsId,
         dateTime: s.dateTime,
         time: timeString(s.dateTime),
-        quals: (s.quals ?? '').split('|').map(q => q.trim()),
+        quals: quals,
         barg: s.barg,
         ticketURI: s.ticketURI ?? ''
       }
