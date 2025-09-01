@@ -1,6 +1,6 @@
 import moment from 'moment'
 
-import { Movie, Theater, Showtime, RawMovie, RawShowtime, Data } from './movieTypes'
+import { Movie, Theater, Showtime, RawMovie, Data } from './movieTypes'
 
 const api: string = 'https://data.tmsapi.com/v1.1/movies/showings'
 const apiKey: string = '6vb58mje68k3z6gavqfkmtfe'
