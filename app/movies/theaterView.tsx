@@ -29,6 +29,10 @@ export function TheaterView ({ theater, data, filters, onFilterMovie, onFilterTh
     .filter((m): m is Movie => m !== undefined) // filter out any undefined movies
     .sort(titleSort)
 
+  if (movies.length === 0) {
+    return null
+  }
+  
   return (
     <li className='flex-1 mb-10 pt-2'>
       <div className='flex items-center'>
