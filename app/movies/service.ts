@@ -63,9 +63,9 @@ function processData (rawData: RawMovie[]): Data {
   const theaters: Theater[] = []
 
   const movies: Movie[] = []
-  
+
   rawMovies.forEach(rm => {
-    if (!movies.find(m => m.rootId === rm.rootId)) {
+    if (movies.find(m => m.rootId === rm.rootId) == null) {
       movies.push(convertMovie(rm))
     }
   })
@@ -90,19 +90,19 @@ function processData (rawData: RawMovie[]): Data {
         return q
       })
 
-      const showtime: Showtime ={
+      const showtime: Showtime = {
         theatreId: s.theatre.id,
         movieId: rm.tmsId,
         dateTime: s.dateTime,
         time: timeString(s.dateTime),
-        quals: quals,
+        quals,
         barg: s.barg,
         ticketURI: s.ticketURI ?? ''
       }
-      
-      if (!movies.find(m => m.tmsId === showtime.movieId)) {
+
+      if (movies.find(m => m.tmsId === showtime.movieId) == null) {
         const parent = movies.find(m => m.rootId === rm.rootId)
-        if (!parent) { return }
+        if (parent == null) { return }
 
         const shorterTitle = parent.title
         const longerTitle = rm.title
@@ -129,14 +129,14 @@ function processData (rawData: RawMovie[]): Data {
   }
 }
 
-export async function getData (zipCode: string, radius: string): Promise<Data> {
+export async function getData (zipCode: string, radius: string, refresh: boolean = false): Promise<Data> {
   const date = new Date()
   const dateParam = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
   const paramString = `startDate=${dateParam}&zip=${zipCode}&radius=${radius}`
 
   const stored = localStorage.getItem(paramString) ?? ''
 
-  if (stored.length > 0) {
+  if (!refresh && stored.length > 0) {
     return JSON.parse(stored) as Data
   }
 
@@ -146,6 +146,13 @@ export async function getData (zipCode: string, radius: string): Promise<Data> {
   const rawData: RawMovie[] = await result.json()
 
   const data = processData(rawData)
-  localStorage.setItem(paramString, JSON.stringify(data))
+
+  try {
+    localStorage.setItem(paramString, JSON.stringify(data))
+  } catch {
+    localStorage.clear()
+    localStorage.setItem(paramString, JSON.stringify(data))
+  }
+
   return data
 }

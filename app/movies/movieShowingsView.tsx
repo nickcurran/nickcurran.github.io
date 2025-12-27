@@ -1,7 +1,7 @@
 import { ReactElement, useState } from 'react'
-import { Showtime, Theater  } from './movieTypes'
+import { Showtime, Theater } from './movieTypes'
 import ShowtimesView
- from './showtimesView'
+  from './showtimesView'
 
 interface MovieShowingsViewProps {
   theater: Theater
@@ -10,7 +10,6 @@ interface MovieShowingsViewProps {
 }
 
 export default function MovieShowingsView ({ theater, showtimes, onFilterTheater }: MovieShowingsViewProps): ReactElement {
-
   const [showHide, setShowHide] = useState(false)
 
   return (

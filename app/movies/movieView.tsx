@@ -18,7 +18,6 @@ interface MovieViewProps {
 }
 
 export default function MovieView ({ movie, data, filters, onFilterMovie, onFilterTheater }: MovieViewProps): ReactElement | null {
-
   const [showHide, setShowHide] = useState(false)
 
   const showtimes = data.showtimes.filter(s => s.movieId === movie.tmsId)
@@ -26,9 +25,9 @@ export default function MovieView ({ movie, data, filters, onFilterMovie, onFilt
     .map(s => s.theatreId)
     .filter(id => !filters.theaters.includes(id))
     .reduce((acc, id) => {
-    acc.add(id)
-    return acc
-  }, new Set<string>())
+      acc.add(id)
+      return acc
+    }, new Set<string>())
 
   const theaters = [...theaterIds]
     .map(id => data.theaters.find(t => t.id === id))

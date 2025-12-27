@@ -48,19 +48,19 @@ export default function Menu (): ReactElement {
   return (
     <div id='menu' className={`relative flex flex-col sm:flex-row items-center m-5 ${outfit.className}`}>
       {/* Hamburger for mobile */}
-      <div className="block sm:hidden absolute z-30">
+      <div className='block sm:hidden absolute z-30'>
         <button
-          aria-label="Open menu"
-          className="p-2"
+          aria-label='Open menu'
+          className='p-2'
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h20M4 14h20M4 20h20"/>
+          <svg width='28' height='28' fill='none' stroke='currentColor' strokeWidth='2'>
+            <path strokeLinecap='round' strokeLinejoin='round' d='M4 8h20M4 14h20M4 20h20' />
           </svg>
         </button>
         {menuOpen && (
-          <div className="absolute left-1/2 transform -translate-x-1/2 mt-0 bg-white dark:bg-black rounded-lg shadow-lg p-4 z-40 min-w-[220px] w-max">
-            <ul className="flex flex-row space-x-4 justify-center mb-4">
+          <div className='absolute left-1/2 transform -translate-x-1/2 mt-0 bg-white dark:bg-black rounded-lg shadow-lg p-4 z-40 min-w-[220px] w-max'>
+            <ul className='flex flex-row space-x-4 justify-center mb-4'>
               {items.map(item => (
                 <li key={item.name}>
                   <Link href={item.href} className={`${pathname === item.href ? 'border-b-4' : ''}`} onClick={() => setMenuOpen(false)}>
@@ -69,7 +69,7 @@ export default function Menu (): ReactElement {
                 </li>
               ))}
             </ul>
-            <ul className="flex flex-row space-x-6 justify-center">
+            <ul className='flex flex-row space-x-6 justify-center'>
               {socials.map(social => (
                 <li key={social.name}>
                   <Link href={social.url} target='_blank' rel='noopener noreferrer' className='social' onClick={() => setMenuOpen(false)}>

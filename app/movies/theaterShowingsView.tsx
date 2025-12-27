@@ -8,8 +8,7 @@ interface TheaterShowingsViewProps {
   onFilterMovie: (movieId: string) => void
 }
 
-export default function TheaterShowingsView({ movie, showtimes, onFilterMovie }: TheaterShowingsViewProps): ReactElement {
-
+export default function TheaterShowingsView ({ movie, showtimes, onFilterMovie }: TheaterShowingsViewProps): ReactElement {
   const [showHide, setShowHide] = useState(false)
 
   return (

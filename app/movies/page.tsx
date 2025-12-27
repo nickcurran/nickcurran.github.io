@@ -8,16 +8,16 @@ import MovieView from './movieView'
 import Menu from '@/components/Menu'
 import { TheaterView } from './theaterView'
 
-export default function MoviesPage(): React.ReactElement {
+export default function MoviesPage (): React.ReactElement {
   const [zipCode, setZipCode] = useState('')
   const [radius, setRadius] = useState('10')
   const [mode, setMode] = useState('movies')
   const [data, setData] = useState<Data>({ movies: [], theaters: [], showtimes: [] })
   const [filters, setFilters] = useState<Filters>({ movies: [], theaters: [] })
 
-  async function fetchData(): Promise<void> {
+  async function fetchData (refresh: boolean = false): Promise<void> {
     if (zipCode.length === 5) { // Only fetch data if zip code is valid
-      const data = await getData(zipCode, radius)
+      const data = await getData(zipCode, radius, refresh)
       setData(data)
     }
   }
@@ -46,41 +46,41 @@ export default function MoviesPage(): React.ReactElement {
     void fetchData()
   }, [zipCode, radius]) // Add dependency array to avoid running on every render
 
-  function zipCodeChange(event: ChangeEvent<HTMLInputElement>): void {
+  function zipCodeChange (event: ChangeEvent<HTMLInputElement>): void {
     const newZipCode = event.target.value
     setZipCode(newZipCode)
     localStorage.setItem('zipCode', newZipCode) // Save zip code to local storage
   }
 
-  function radiusChange(event: ChangeEvent<HTMLSelectElement>): void {
+  function radiusChange (event: ChangeEvent<HTMLSelectElement>): void {
     const newRadius = event.target.value
     setRadius(newRadius)
     localStorage.setItem('radius', newRadius) // Save radius to local storage
   }
 
-  function modeChange(event: ChangeEvent<HTMLSelectElement>): void {
+  function modeChange (event: ChangeEvent<HTMLSelectElement>): void {
     const newMode = event.target.value
     setMode(newMode)
     localStorage.setItem('mode', newMode) // Save mode to local storage
   }
 
-  function saveFilters(newFilters: Filters): void {
+  function saveFilters (newFilters: Filters): void {
     localStorage.setItem('filters', JSON.stringify(newFilters))
   }
 
-  function filterMovie(tmsId: string): void {
+  function filterMovie (tmsId: string): void {
     const newFilters = { ...filters, movies: [...filters.movies, tmsId] }
     setFilters(newFilters)
     saveFilters(newFilters)
   }
 
-  function filterTheater(theaterId: string): void {
+  function filterTheater (theaterId: string): void {
     const newFilters = { ...filters, theaters: [...filters.theaters, theaterId] }
     setFilters(newFilters)
     saveFilters(newFilters)
   }
 
-  function clearFilters(): void {
+  function clearFilters (): void {
     setFilters({ movies: [], theaters: [] })
     saveFilters({ movies: [], theaters: [] })
   }
@@ -88,6 +88,7 @@ export default function MoviesPage(): React.ReactElement {
   const theaters = data.theaters.filter(t => !filters.theaters.includes(t.id))
   const movies = data.movies.filter(m => !filters.movies.includes(m.tmsId))
   const isFiltered = filters.movies.length > 0 || filters.theaters.length > 0
+  const hasData = zipCode.length === 5
 
   return (
     <div className='max-w-[800px] w-full flex-1'>
@@ -121,6 +122,10 @@ export default function MoviesPage(): React.ReactElement {
           {isFiltered && (
             <button onClick={clearFilters} className='ml-4'>Clear Filters</button>
           )}
+
+          {hasData && (
+            <button onClick={() => void fetchData(true)} className='ml-4'>Refresh</button>
+          )}
         </section>
 
         <section>
@@ -133,7 +138,7 @@ export default function MoviesPage(): React.ReactElement {
                 filters={filters}
                 onFilterMovie={filterMovie}
                 onFilterTheater={filterTheater}
-                 />
+              />
             ))}
             {mode === 'movies' && movies.map(m => (
               <MovieView
@@ -142,7 +147,8 @@ export default function MoviesPage(): React.ReactElement {
                 data={data}
                 filters={filters}
                 onFilterMovie={filterMovie}
-                onFilterTheater={filterTheater} />
+                onFilterTheater={filterTheater}
+              />
             ))}
           </ul>
         </section>

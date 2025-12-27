@@ -11,18 +11,17 @@ interface TheaterViewProps {
 }
 
 export function TheaterView ({ theater, data, filters, onFilterMovie, onFilterTheater }: TheaterViewProps): ReactElement | null {
-
   const [showHide, setShowHide] = useState(false)
 
   const showtimes = data.showtimes.filter(s => s.theatreId === theater.id)
-  
+
   const movieIds = showtimes
     .map(s => s.movieId)
     .filter(id => !filters.movies.includes(id))
     .reduce((acc, id) => {
-    acc.add(id)
-    return acc
-  }, new Set<string>())
+      acc.add(id)
+      return acc
+    }, new Set<string>())
 
   const movies = [...movieIds]
     .map(id => data.movies.find(m => m.tmsId === id))
@@ -32,7 +31,7 @@ export function TheaterView ({ theater, data, filters, onFilterMovie, onFilterTh
   if (movies.length === 0) {
     return null
   }
-  
+
   return (
     <li className='flex-1 mb-10 pt-2'>
       <div className='flex items-center'>
@@ -46,7 +45,6 @@ export function TheaterView ({ theater, data, filters, onFilterMovie, onFilterTh
 
       <ul>
         {movies.map(movie => {
-
           const movieShowtimes = showtimes.filter(s => s.movieId === movie.tmsId)
 
           return (
