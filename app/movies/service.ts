@@ -4,6 +4,7 @@ import { Movie, Theater, Showtime, RawMovie, Data } from './movieTypes'
 
 const api: string = 'https://data.tmsapi.com/v1.1/movies/showings'
 const apiKey: string = '6vb58mje68k3z6gavqfkmtfe'
+const cacheKeyPrefix: string = 'startDate='
 
 function timeString (dateTime: string): string {
   return moment(dateTime).format('h:mm a')
@@ -132,7 +133,7 @@ function processData (rawData: RawMovie[]): Data {
 export async function getData (zipCode: string, radius: string, refresh: boolean = false): Promise<Data> {
   const date = new Date()
   const dateParam = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
-  const paramString = `startDate=${dateParam}&zip=${zipCode}&radius=${radius}`
+  const paramString = `${cacheKeyPrefix}${dateParam}&zip=${zipCode}&radius=${radius}`
 
   const stored = localStorage.getItem(paramString) ?? ''
 
@@ -150,9 +151,24 @@ export async function getData (zipCode: string, radius: string, refresh: boolean
   try {
     localStorage.setItem(paramString, JSON.stringify(data))
   } catch {
-    localStorage.clear()
+    clearCachedSearches()
     localStorage.setItem(paramString, JSON.stringify(data))
   }
 
   return data
+}
+
+function clearCachedSearches (): void {
+  const keysToRemove: string[] = []
+
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i)
+    if (key?.startsWith(cacheKeyPrefix) === true) {
+      keysToRemove.push(key)
+    }
+  }
+
+  keysToRemove.forEach(key => {
+    localStorage.removeItem(key)
+  })
 }
