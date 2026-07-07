@@ -103,6 +103,14 @@ div#story {
         line-height: 1.75rem;
     }
 
+    .photo-caption {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
     img {
         border-radius: 20px;
         margin: 10px 0 3rem;
