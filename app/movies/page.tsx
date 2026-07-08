@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, ChangeEvent, useEffect } from 'react'
+import React, { useState, ChangeEvent, useEffect, useCallback } from 'react'
 
 import { getData } from './service'
 import { Data, Filters } from './movieTypes'
@@ -15,12 +15,12 @@ export default function MoviesPage (): React.ReactElement {
   const [data, setData] = useState<Data>({ movies: [], theaters: [], showtimes: [] })
   const [filters, setFilters] = useState<Filters>({ movies: [], theaters: [] })
 
-  async function fetchData (refresh: boolean = false): Promise<void> {
+  const fetchData = useCallback(async (refresh: boolean = false): Promise<void> => {
     if (zipCode.length === 5) { // Only fetch data if zip code is valid
       const data = await getData(zipCode, radius, refresh)
       setData(data)
     }
-  }
+  }, [zipCode, radius])
 
   useEffect(() => {
     const storedZipCode = localStorage.getItem('zipCode')
@@ -28,6 +28,10 @@ export default function MoviesPage (): React.ReactElement {
     const storedMode = localStorage.getItem('mode')
     const storedFilters = localStorage.getItem('filters')
 
+    // Hydrating persisted state on mount: localStorage is unavailable during
+    // static prerender, so these writes must run in an effect rather than at
+    // render time (reading it during render would cause a hydration mismatch).
+    /* eslint-disable react-hooks/set-state-in-effect */
     if (storedMode !== null) {
       setMode(storedMode)
     }
@@ -40,11 +44,14 @@ export default function MoviesPage (): React.ReactElement {
     if (storedFilters !== null) {
       setFilters(JSON.parse(storedFilters))
     }
+    /* eslint-enable react-hooks/set-state-in-effect */
   }, [])
 
   useEffect(() => {
+    // setData runs after an awaited fetch, so it is not a synchronous effect update.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     void fetchData()
-  }, [zipCode, radius]) // Add dependency array to avoid running on every render
+  }, [fetchData])
 
   function zipCodeChange (event: ChangeEvent<HTMLInputElement>): void {
     const newZipCode = event.target.value
