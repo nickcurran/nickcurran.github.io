@@ -24,7 +24,7 @@ export default function RootLayout (props: Readonly<LayoutProps>): ReactElement 
 
           <footer className='w-full p-5 text-center text-xs'>
             <div className='flex justify-between text-gray-300 dark:text-gray-700'>
-              <div className=''>© 2025 <Link href='/'>Nick Curran</Link></div>
+              <div className=''>© {new Date().getFullYear()} <Link href='/'>Nick Curran</Link></div>
               <div>Icons by <a href='https://icons8.com' target='_blank' rel='noopener noreferrer'>Icon8</a></div>
             </div>
           </footer>
