@@ -1,5 +1,3 @@
-import moment from 'moment'
-
 import { Movie, Theater, Showtime, RawMovie, Data } from './movieTypes'
 
 const api: string = 'https://data.tmsapi.com/v1.1/movies/showings'
@@ -7,7 +5,11 @@ const apiKey: string = '6vb58mje68k3z6gavqfkmtfe'
 const cacheKeyPrefix: string = 'startDate='
 
 function timeString (dateTime: string): string {
-  return moment(dateTime).format('h:mm a')
+  const date = new Date(dateTime)
+  const hours12 = date.getHours() % 12 === 0 ? 12 : date.getHours() % 12
+  const minutes = date.getMinutes().toString().padStart(2, '0')
+  const period = date.getHours() < 12 ? 'am' : 'pm'
+  return `${hours12}:${minutes} ${period}`
 }
 
 function comparableTitle (title: string): string {
@@ -73,7 +75,7 @@ function processData (rawData: RawMovie[]): Data {
 
   rawMovies.forEach(rm => {
     rm.showtimes.forEach(s => {
-      let quals = s.quals ? s.quals.split('|').map(q => q.trim()) : []
+      let quals = s.quals != null ? s.quals.split('|').map(q => q.trim()) : []
 
       quals = quals.map(q => {
         if (q === 'Closed Captioned') {

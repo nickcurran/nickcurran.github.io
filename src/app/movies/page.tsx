@@ -31,7 +31,6 @@ export default function MoviesPage (): React.ReactElement {
     // Hydrating persisted state on mount: localStorage is unavailable during
     // static prerender, so these writes must run in an effect rather than at
     // render time (reading it during render would cause a hydration mismatch).
-    /* eslint-disable react-hooks/set-state-in-effect */
     if (storedMode !== null) {
       setMode(storedMode)
     }
@@ -44,13 +43,10 @@ export default function MoviesPage (): React.ReactElement {
     if (storedFilters !== null) {
       setFilters(JSON.parse(storedFilters))
     }
-    /* eslint-enable react-hooks/set-state-in-effect */
   }, [])
 
   useEffect(() => {
-    // setData runs after an awaited fetch, so it is not a synchronous effect update.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    void fetchData()
+    fetchData().catch(() => {})
   }, [fetchData])
 
   function zipCodeChange (event: ChangeEvent<HTMLInputElement>): void {
@@ -131,7 +127,7 @@ export default function MoviesPage (): React.ReactElement {
           )}
 
           {hasData && (
-            <button onClick={() => void fetchData(true)} className='ml-4'>Refresh</button>
+            <button onClick={() => { fetchData(true).catch(() => {}) }} className='ml-4'>Refresh</button>
           )}
         </section>
 

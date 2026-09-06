@@ -11,10 +11,6 @@ const nextConfig: NextConfig = {
   // Optionally, add any other Next.js config below
   turbopack: {
     resolveExtensions: ['.js', '.jsx', '.ts', '.tsx', '.md', '.mdx']
-  },
-
-  experimental: {
-    viewTransition: true
   }
 }
 
