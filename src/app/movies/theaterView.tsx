@@ -35,7 +35,9 @@ export function TheaterView ({ theater, data, filters, onFilterMovie, onFilterTh
   return (
     <li className='flex-1 mb-10 pt-2'>
       <div className='flex items-center'>
-        <h1 className='text-2xl' onClick={() => setShowHide(!showHide)}>{theater.name}</h1>
+        <h2 className='text-2xl'>
+          <button type='button' aria-expanded={showHide} onClick={() => setShowHide(!showHide)}>{theater.name}</button>
+        </h2>
         {showHide && (
           <span>
             <button className='ml-4 text-sm' onClick={() => onFilterTheater(theater.id)}><em>Hide</em>?</button>

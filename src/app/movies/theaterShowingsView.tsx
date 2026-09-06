@@ -14,7 +14,9 @@ export default function TheaterShowingsView ({ movie, showtimes, onFilterMovie }
   return (
     <li className='mt-2'>
       <div className='flex items-center'>
-        <h2 className='text-xl inline-block' onClick={() => setShowHide(!showHide)}>{movie.title}</h2>
+        <h3 className='text-xl inline-block'>
+          <button type='button' className='text-left' aria-expanded={showHide} onClick={() => setShowHide(!showHide)}>{movie.title}</button>
+        </h3>
         {showHide && (
           <span>
             <button className='ml-4 text-sm' onClick={() => onFilterMovie(movie.tmsId)}><em>Hide</em>?</button>

@@ -47,7 +47,9 @@ export default function MovieView ({ movie, data, filters, onFilterMovie, onFilt
       )}
 
       <div className='flex items-center'>
-        <h1 className='text-2xl inline-block' onClick={() => setShowHide(!showHide)}>{movie.title}</h1>
+        <h2 className='text-2xl inline-block'>
+          <button type='button' className='text-left' aria-expanded={showHide} onClick={() => setShowHide(!showHide)}>{movie.title}</button>
+        </h2>
         {showHide && (
           <span>
             <button className='ml-4 text-sm' onClick={() => onFilterMovie(movie.tmsId)}><em>Hide</em>?</button>

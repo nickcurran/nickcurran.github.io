@@ -49,6 +49,11 @@ h2 {
     font-weight: 600;
 }
 
+h3 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+}
+
 /* This is Electron Blue from the American Palette here: https://flatuicolors.com/palette/us */
 a {
     color: var(--color-link);

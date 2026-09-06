@@ -15,8 +15,8 @@ export default function ShowtimesView ({ showtimes }: ShowtimesViewProps): React
           <li key={`${s.theatreId}-${idx}`} className='inline-block mr-4'>
             {(s.quals.length > 0)
               ? (selectedShowtime === s)
-                  ? <span className='text-blue-500 underline' onClick={() => setSelectedShowtime(null)}>{s.time}</span>
-                  : <span className='text-blue-500' onClick={() => setSelectedShowtime(s)}>{s.time}</span>
+                  ? <button type='button' className='text-blue-500 underline' aria-expanded={true} onClick={() => setSelectedShowtime(null)}>{s.time}</button>
+                  : <button type='button' className='text-blue-500' aria-expanded={false} onClick={() => setSelectedShowtime(s)}>{s.time}</button>
               : <span>{s.time}</span>}
 
           </li>
