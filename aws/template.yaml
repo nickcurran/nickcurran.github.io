@@ -1,0 +1,46 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Proxies the Gracenote/TMS movies API so the API key never reaches the browser.
+  See docs/plans/hardening.md for the full plan.
+
+Parameters:
+  TmsApiKey:
+    Type: String
+    NoEcho: true
+    Description: Gracenote/TMS API key, passed at deploy time. Never commit this.
+  AllowedOrigin:
+    Type: String
+    Default: https://tcob.com
+    Description: Production origin allowed to call this function (CORS).
+
+Resources:
+  MoviesProxyFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: tcob-movies-proxy
+      CodeUri: handler/
+      Handler: index.handler
+      Runtime: nodejs22.x
+      Architectures:
+        - arm64
+      MemorySize: 128
+      Timeout: 10
+      ReservedConcurrentExecutions: 5
+      Environment:
+        Variables:
+          TMS_API_KEY: !Ref TmsApiKey
+      FunctionUrlConfig:
+        AuthType: NONE
+        Cors:
+          AllowOrigins:
+            - !Ref AllowedOrigin
+            - http://localhost:3000
+          AllowMethods:
+            - GET
+          MaxAge: 300
+
+Outputs:
+  FunctionUrl:
+    Description: Public URL for the movies proxy
+    Value: !GetAtt MoviesProxyFunctionUrl.FunctionUrl

@@ -2,7 +2,9 @@
 
 [`app/movies/`](../app/movies) is the one genuinely interactive section of
 [tcob.com](https://tcob.com). Because the site is statically exported, it runs entirely in
-the browser (`'use client'`) and talks directly to a third-party API.
+the browser (`'use client'`). It doesn't call the third-party movies API directly — instead
+it calls a small AWS Lambda proxy (see [`aws/`](../aws)) that holds the API key server-side,
+so the key never ships in the client bundle.
 
 ## Pieces
 
@@ -10,8 +12,9 @@ the browser (`'use client'`) and talks directly to a third-party API.
   inputs (zip code, radius, and a "Movies vs Theaters" view mode) plus user filters, and
   persists all of them to `localStorage` so they survive reloads. It fetches showtimes and
   renders the results as either a movie-first or theater-first list.
-* [`service.ts`](../app/movies/service.ts) — the data layer. `getData` calls the Gracenote/TMS
-  ["Movie Showtimes" API](../app/movies/readme.md), normalizes the raw response
+* [`service.ts`](../app/movies/service.ts) — the data layer. `getData` calls the Lambda proxy,
+  which forwards to the Gracenote/TMS ["Movie Showtimes" API](../app/movies/readme.md) using a
+  server-side key (see [`aws/readme.md`](../aws/readme.md)). It normalizes the raw response
   (deduping movies by `rootId`, flattening showtimes, collecting theaters, tidying
   qualifiers like "Closed Captioned" → "CC"), sorts titles, and **caches each
   zip/radius/date query in `localStorage`** so repeat visits don't re-hit the API. A

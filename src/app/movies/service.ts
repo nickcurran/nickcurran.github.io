@@ -1,7 +1,6 @@
 import { Movie, Theater, Showtime, RawMovie, Data } from './movieTypes'
 
-const api: string = 'https://data.tmsapi.com/v1.1/movies/showings'
-const apiKey: string = '6vb58mje68k3z6gavqfkmtfe'
+const api: string = 'https://3vnm6ymuuqc3xpjcdvbg5o2lbu0ptyke.lambda-url.us-east-1.on.aws/'
 const cacheKeyPrefix: string = 'startDate='
 
 function timeString (dateTime: string): string {
@@ -143,7 +142,7 @@ export async function getData (zipCode: string, radius: string, refresh: boolean
     return JSON.parse(stored) as Data
   }
 
-  const moviesUrl = `${api}?startDate=${dateParam}&zip=${zipCode}&radius=${radius}&api_key=${apiKey}`
+  const moviesUrl = `${api}?startDate=${dateParam}&zip=${zipCode}&radius=${radius}`
 
   const result = await fetch(moviesUrl)
   const rawData: RawMovie[] = await result.json()

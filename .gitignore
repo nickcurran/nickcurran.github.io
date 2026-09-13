@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# aws sam build output
+aws/.aws-sam/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
