@@ -54,6 +54,28 @@ h3 {
     font-weight: 600;
 }
 
+@keyframes shimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+.skeleton {
+    display: inline-block;
+    background-image: linear-gradient(
+        to right,
+        color-mix(in srgb, var(--foreground) 6%, transparent) 8%,
+        color-mix(in srgb, var(--foreground) 15%, transparent) 18%,
+        color-mix(in srgb, var(--foreground) 6%, transparent) 33%
+    );
+    background-size: 800px 104px;
+    animation: shimmer 1.5s linear infinite;
+    border-radius: 4px;
+}
+
 /* This is Electron Blue from the American Palette here: https://flatuicolors.com/palette/us */
 a {
     color: var(--color-link);

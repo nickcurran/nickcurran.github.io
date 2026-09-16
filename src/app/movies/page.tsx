@@ -7,6 +7,7 @@ import { Data, Filters } from './movieTypes'
 import MovieView from './movieView'
 import Menu from '@/components/Menu'
 import { TheaterView } from './theaterView'
+import ShowtimesSkeleton from './showtimesSkeleton'
 
 export default function MoviesPage (): React.ReactElement {
   const [zipCode, setZipCode] = useState('')
@@ -14,11 +15,17 @@ export default function MoviesPage (): React.ReactElement {
   const [mode, setMode] = useState('movies')
   const [data, setData] = useState<Data>({ movies: [], theaters: [], showtimes: [] })
   const [filters, setFilters] = useState<Filters>({ movies: [], theaters: [] })
+  const [isLoading, setIsLoading] = useState(false)
 
   const fetchData = useCallback(async (refresh: boolean = false): Promise<void> => {
     if (zipCode.length === 5) { // Only fetch data if zip code is valid
-      const data = await getData(zipCode, radius, refresh)
-      setData(data)
+      setIsLoading(true)
+      try {
+        const data = await getData(zipCode, radius, refresh)
+        setData(data)
+      } finally {
+        setIsLoading(false)
+      }
     }
   }, [zipCode, radius])
 
@@ -133,7 +140,8 @@ export default function MoviesPage (): React.ReactElement {
 
         <section>
           <ul>
-            {mode === 'theaters' && theaters.map(t => (
+            {isLoading && <ShowtimesSkeleton mode={mode} />}
+            {!isLoading && mode === 'theaters' && theaters.map(t => (
               <TheaterView
                 key={t.id}
                 theater={t}
@@ -143,7 +151,7 @@ export default function MoviesPage (): React.ReactElement {
                 onFilterTheater={filterTheater}
               />
             ))}
-            {mode === 'movies' && movies.map(m => (
+            {!isLoading && mode === 'movies' && movies.map(m => (
               <MovieView
                 key={m.tmsId}
                 movie={m}
