@@ -1,8 +1,8 @@
 const api = 'https://data.tmsapi.com/v1.1/movies/showings'
 
-// Showtimes for a given zip/radius/day rarely change once published. Caching for an hour lets
+// Showtimes for a given zip/radius/day rarely change once published. Caching for 3 hours lets
 // CloudFront (see template.yaml) absorb repeat lookups without re-hitting the TMS API.
-const cacheControl = 'public, max-age=3600'
+const cacheControl = 'public, max-age=10800'
 
 export const handler = async (event) => {
   const params = event.queryStringParameters ?? {}
