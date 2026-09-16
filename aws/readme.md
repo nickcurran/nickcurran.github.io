@@ -4,6 +4,10 @@ A single Lambda function, fronted by a Function URL, that holds the Gracenote/TM
 server-side so it never ships in the static site's client bundle. See
 [docs/plans/hardening.md](../docs/plans/hardening.md) for why this exists.
 
+A CloudFront distribution sits in front of the Function URL and caches successful responses for
+an hour, keyed by `zip`/`radius`/`startDate`. Repeat lookups for the same area/day are served from
+the edge instead of invoking the Lambda or calling TMS again.
+
 ## Prerequisites
 
 - [AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html)
@@ -22,11 +26,18 @@ it's marked `NoEcho` so it won't be echoed to the terminal or written to CloudFo
 plaintext). It also offers to save the non-secret choices to `samconfig.toml`; if you do, don't
 commit the `TmsApiKey` into that file. Subsequent deploys can just be `sam deploy`.
 
-After deploy, the Function URL is printed as a stack output (`FunctionUrl`) — also visible via:
+After deploy, the stack prints two outputs — also visible via:
 
 ```sh
 aws cloudformation describe-stacks --stack-name <stack-name> --query "Stacks[0].Outputs"
 ```
+
+- `CdnDomainName` — the CloudFront domain. Point `src/app/movies/service.ts` at this one.
+- `FunctionUrl` — the raw Lambda Function URL, uncached. Useful for testing but shouldn't be
+  called from the browser (every request would hit TMS directly).
+
+CloudFront distributions take 5-15 minutes to finish deploying after `sam deploy` returns, so the
+new `CdnDomainName` may 403/timeout for a few minutes before it's ready.
 
 ## Local testing
 

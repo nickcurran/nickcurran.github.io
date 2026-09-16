@@ -1,6 +1,8 @@
 import { Movie, Theater, Showtime, RawMovie, Data } from './movieTypes'
 
-const api: string = 'https://3vnm6ymuuqc3xpjcdvbg5o2lbu0ptyke.lambda-url.us-east-1.on.aws/'
+// CloudFront distribution in front of the Lambda Function URL (see aws/template.yaml) — caches
+// responses at the edge so repeat zip/radius/day lookups skip the Lambda and the TMS API.
+const api: string = 'https://d2hlwl8w9oj20b.cloudfront.net/'
 const cacheKeyPrefix: string = 'startDate='
 
 function timeString (dateTime: string): string {

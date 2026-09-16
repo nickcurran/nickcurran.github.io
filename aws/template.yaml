@@ -40,7 +40,63 @@ Resources:
             - GET
           MaxAge: 300
 
+  # Caches successful responses at the edge, keyed by (zip, radius, startDate), so repeat
+  # lookups for the same day/area are served without invoking the Lambda or calling TMS again.
+  MoviesCachePolicy:
+    Type: AWS::CloudFront::CachePolicy
+    Properties:
+      CachePolicyConfig:
+        Name: !Sub '${AWS::StackName}-movies-cache'
+        MinTTL: 0
+        DefaultTTL: 0
+        MaxTTL: 86400
+        ParametersInCacheKeyAndForwardedToOrigin:
+          EnableAcceptEncodingGzip: true
+          EnableAcceptEncodingBrotli: true
+          CookiesConfig:
+            CookieBehavior: none
+          HeadersConfig:
+            HeaderBehavior: whitelist
+            Headers:
+              - Origin
+          QueryStringsConfig:
+            QueryStringBehavior: whitelist
+            QueryStrings:
+              - zip
+              - radius
+              - startDate
+
+  MoviesCdn:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        Comment: !Sub 'Edge cache for ${AWS::StackName} movies proxy'
+        HttpVersion: http2
+        PriceClass: PriceClass_100
+        Origins:
+          - Id: MoviesProxyOrigin
+            DomainName: !Select [2, !Split ['/', !GetAtt MoviesProxyFunctionUrl.FunctionUrl]]
+            CustomOriginConfig:
+              OriginProtocolPolicy: https-only
+              OriginSSLProtocols:
+                - TLSv1.2
+        DefaultCacheBehavior:
+          TargetOriginId: MoviesProxyOrigin
+          ViewerProtocolPolicy: redirect-to-https
+          AllowedMethods:
+            - GET
+            - HEAD
+          CachedMethods:
+            - GET
+            - HEAD
+          Compress: true
+          CachePolicyId: !Ref MoviesCachePolicy
+
 Outputs:
   FunctionUrl:
-    Description: Public URL for the movies proxy
+    Description: Public URL for the movies proxy (bypasses the CloudFront cache; for testing)
     Value: !GetAtt MoviesProxyFunctionUrl.FunctionUrl
+  CdnDomainName:
+    Description: CloudFront domain the browser should call instead of the raw Function URL
+    Value: !GetAtt MoviesCdn.DomainName
