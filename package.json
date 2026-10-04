@@ -9,22 +9,22 @@
         "lint": "eslint . && ts-standard"
     },
     "dependencies": {
-        "@mdx-js/loader": "^3.1.0",
-        "@mdx-js/react": "^3.1.0",
-        "@next/mdx": "^16.2.10",
-        "@types/mdx": "^2.0.13",
-        "next": "^16.2.10",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0"
+        "@mdx-js/loader": "^3.1.1",
+        "@mdx-js/react": "^3.1.1",
+        "@next/mdx": "^16.3.8",
+        "@types/mdx": "^2.0.14",
+        "next": "^16.3.8",
+        "react": "^19.3.0",
+        "react-dom": "^19.3.0"
     },
     "devDependencies": {
         "@tailwindcss/postcss": "^4",
-        "@types/lodash": "^4.17.17",
-        "@types/node": "^26.1.0",
+        "@types/lodash": "^4.17.25",
+        "@types/node": "^26.6.4",
         "@types/react": "^19",
         "@types/react-dom": "^19",
-        "eslint": "^9",
-        "eslint-config-next": "^16.2.10",
+        "eslint": "^9.39.5",
+        "eslint-config-next": "^16.3.8",
         "tailwindcss": "^4",
         "ts-standard": "^12.0.2",
         "typescript": "^6.0.3"
